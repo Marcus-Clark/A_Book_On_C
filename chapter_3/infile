@@ -1,0 +1,2 @@
+Some text from the file infile \n \t... do these get copied???
+minus one is written -1. This the value of EOF in C.

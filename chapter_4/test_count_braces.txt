@@ -1,0 +1,21 @@
+#include <stdio.h>
+/*TEST FILE FOR CHECKING COUNT_BRACES */
+int main(void) {
+	int left_cnt = 0, right_cnt = 0;     /*variables to keep track of braces */
+	int c;
+	
+	while ((c = getchar()) != EOF) {
+			if (c == '{')
+				++left_cnt;
+			else if (c == '}')
+				++right_cnt;
+					if (left_cnt >= right_cnt)
+						putchar(c);
+					else if  (right_cnt > left_cnt)
+						putchar('?');
+			} }   /*EXTRA RIGHT BRACE HERE */
+	putchar('\n');	
+	
+	return 0;
+	
+}
