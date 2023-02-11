@@ -1,0 +1,3 @@
+To use enter a command like this:
+cat declaration_to_test.txt | ./parsing_declarations
+
