@@ -5,6 +5,9 @@
  #define MAXTOKENS 100
  #define MAXTOKENLEN 64
 
+/* The Piece of Code that Understandeth All Parsing
+* from 'Expert C Programming' by Peter Van Der Linden */
+
  enum type_tag { IDENTIFIER, QUALIFIER, TYPE};
  
  struct token {
