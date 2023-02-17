@@ -1,0 +1,32 @@
+---
+GLOBAL VARIABLES
+
+Global variables are accessible to all the functions in the
+file where the variable is defined, and they are available
+also to other functions in other files that comprise the
+program.
+
+In a million lines of code with lots of external variables,
+it can be difficult to keep track of things.  Imagine
+something like the following:
+
+   ---
+   In a major header file:
+
+      extern int   a, b, c;
+
+      .....
+
+   ---
+   In some other .c file:
+
+      .....
+
+      int do_some_work()
+      {
+	 .....      /* forgot to declare the variable a locally */
+
+	 a = 77;    /* proper value for local a, but wrong for global a! */
+
+
+A simple mistake can make a million lines of code not work properly.

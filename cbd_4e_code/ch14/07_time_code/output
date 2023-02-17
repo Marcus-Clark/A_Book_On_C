@@ -1,0 +1,21 @@
+
+Number of multiplies: 5000000
+
+Type float:
+
+   User time: 1.8 seconds
+   Real time: 2.0 seconds
+
+Type double:
+
+   User time: 1.8 seconds
+   Real time: 2.0 seconds
+
+Type long double:
+
+   User time: 552.4 seconds
+   Real time: 567.0 seconds
+
+   Total user time: 556.0 seconds
+   Total real time: 572.0 seconds
+

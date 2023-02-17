@@ -1,0 +1,359 @@
+---
+List of directories and files for CBD 4e code:
+
+.:
+READ_ME    ap_d/      ch04/      ch08/      ch12/      extra/
+ap_a/      ch01/      ch05/      ch09/      ch13/      line_cnt
+ap_b/      ch02/      ch06/      ch10/      ch14/      ls_CFR
+ap_c/      ch03/      ch07/      ch11/      ch15/
+
+./ap_a:
+00_READ_ME       06_va_sum.c      11_strpbrk.c     17_camelot.c
+01_errno.c       07_va_report.c   12_strtok.c      18_fork.c
+02_locale.c      08_atexit.c      13_strtok.c      19_fork.c
+03_setjump.c     08_offset.c      14_time.c
+04_signal.c      09_read_wrt.c    15_strftime.c
+05_sig_err.c     10_memchr.c      16_camelot.c
+
+./ap_b:
+00_READ_ME        03_cnd_comp/      06_stringize.c    09_correspond/
+01_macro/         04_cnd_comp/      07_mrg_tokens.c
+02_undef/         05_predef.c       08_error.c
+
+./ap_b/01_macro:
+READ_ME     compare.c   main.c      makefile    sort.h
+
+./ap_b/02_undef:
+READ_ME   pgm1.c    pgm2.c
+
+./ap_b/03_cnd_comp:
+READ_ME   pgm1.c    pgm2.c
+
+./ap_b/04_cnd_comp:
+READ_ME    a_b_c.h    main.c     makefile
+
+./ap_b/09_correspond:
+READ_ME   pgm1.c    pgm2.c
+
+./ap_c:
+00_READ_ME          04_unpack.c         08_sys_consider.c   exer_18/
+01_bit_print/       05_unpack.c         exer_05/            exer_19/
+02_pack.c           06_employee.c       exer_09.c
+03_pack.c           07_common_err.c     exer_14/
+
+./ap_c/01_bit_print:
+READ_ME       bit_print.h   makefile
+bit_print.c   main.c        print.c
+
+./ap_c/exer_05:
+READ_ME       fct.c         majority.c    makefile
+bit_print.c   main.c        majority.h    print.c
+
+./ap_c/exer_14:
+READ_ME       main.c        print.c       try_me.h
+bit_print.c   makefile      run_run.c
+
+./ap_c/exer_18:
+READ_ME   pgm1.c    pgm2.c
+
+./ap_c/exer_19:
+READ_ME   pgm1.c    pgm2.c
+
+./ap_d:
+00_READ_ME       01_array_ptr.c   02_array_ptr.c
+
+./ch01:
+00_READ_ME      05_prn_ltr.c    10_sum.c        a.out*          exer_12.c
+01_hello.c      06_sum_x_y.c    11_sum.c        exer_01.c       t
+02_hello.c      07_initials.c   12_dbl_out.c    exer_03/        tt
+03_hello.c      08_initials.c   13_hello.c      exer_04.c       ttt
+04_wreck.c      09_circle.c     14_gcd.c        exer_07.c
+
+./ch01/exer_03:
+READ_ME   pgm1.c    pgm2.c
+
+./ch02:
+00_READ_ME       04_birthday.c    08_terrible.c    12_pow_of_2.c
+01_read_two.c    05_exmpl_1.c     09_long_str.c    13_prn_rand.c
+02_pow_of_2.c    06_exmpl_2.c     10_will_this.c
+03_prn_rand.c    07_circle.c      11_try_me.c
+
+./ch03:
+00_READ_ME      04_boolean.c    exer_06.c       exer_17.c       exer_25.c
+01_find_min.c   05_fails.c      exer_07.c       exer_19.c
+02_find_max.c   a.out*          exer_08.c       exer_20.c
+03_triples.c    exer_04.c       exer_16.c       exer_22.c
+
+./ch04:
+00_READ_ME          06_exmpl_pgm/       12_sys_dep.c        exer_16.c
+01_prn_msg.c        07_heads_or_tails/  13_default.c        exer_17.c
+02_prn_msgs.c       08_compute.c        14_find_max/        exer_18.c
+03_min_val.c        09_recursion.c      exer_06.c
+04_running.c        10_traditional/     exer_12/
+05_random.c         11_universe.c       exer_14/
+
+./ch04/06_exmpl_pgm:
+READ_ME    fct.c      main.c     makefile   pgm.h      print.c
+
+./ch04/07_heads_or_tails:
+READ_ME       main.c        p_r_s.h       report.c
+compare.c     makefile      print.c       selection.c
+
+./ch04/10_traditional:
+READ_ME   main.c
+
+./ch04/14_find_max:
+READ_ME      find_max.h   main.c       makefile     max.c
+
+./ch04/exer_12:
+READ_ME      is_prime.c   main.c       makefile     output       primes.h
+
+./ch04/exer_14:
+READ_ME      is_prime.c   makefile     primes.h
+hint         main.c       output
+
+./ch05:
+00_READ_ME        03_repeat.c       07_bases.c        exer_15.c
+01_dbl_out.c      04_word_cnt.c     exer_08.c         exer_16.c
+01_try_me         05_copy.c         exer_09.c
+02_capitalize.c   06_bases.c        exer_12.c
+
+./ch06:
+00_READ_ME       03_sq_rt_pow.c   exer_06.c        exer_17.c
+01_too_big.c     04_interest.c    exer_09.c        exer_21.c
+02_sizeof.c      05_roots.c       exer_16.c
+
+./ch07:
+00_READ_ME      02_color.c      exer_08.c
+01_p_r_s_game/  exer_07/        old/
+
+./ch07/01_p_r_s_game:
+READ_ME       compare.o     makefile      report.o      t
+a.out*        main.c        p_r_s.h       selection.c   wrt.c
+compare.c     main.o        report.c      selection.o   wrt.o
+
+./ch07/exer_07:
+READ_ME   pgm1.c    pgm2.c
+
+./ch07/old:
+READ_ME     main.c      p_r_s.h     report.c
+compare.c   makefile    print.c     select.c
+
+./ch08:
+00_READ_ME      04_swap.c       08_static/      exer_11/        exer_18/
+01_address.c    05_global.c     09_char_cnt.c   exer_12.c
+02_address.c    06_external/    10_bad_pgm.c    exer_16.c
+03_swap.c       07_external/    11_greater/     exer_17.c
+
+./ch08/06_external:
+READ_ME    file2.c    main.c     makefile
+
+./ch08/07_external:
+READ_ME    fct.c      main.c     makefile   print.c    try_me.h
+
+./ch08/08_static:
+READ_ME    get.c      main.c     makefile   output     random.c   random.h
+
+./ch08/11_greater:
+READ_ME     greater.c   main.c      makefile    shadow      try_me.h
+
+./ch08/exer_11:
+READ_ME   pgm1.c    pgm2.c    pgm3.c    pgm4.c    pgm5.c    pgm6.c
+
+./ch08/exer_18:
+READ_ME    main.c     makefile   shift.c    shift.h
+
+./ch09:
+00_READ_ME           05_fill_array.c      10_new_oper.c
+01_prn_array.c       06_dynamic_array.c   exer_06.c
+02_cnt_ltrs.c        07_inefficient.c     exer_11.c
+03_ptr_arith.c       08_efficient.c       exer_16.c
+04_bubble_sort.c     09_graceful/
+
+./ch09/09_graceful:
+READ_ME    grace.c    main.c     makefile   try_me.h
+
+./ch10:
+00_READ_ME       04_word_cnt.c    a.out*           exer_08/
+01_nice_day.c    05_word_cnt.c    exer_04/         exer_09.c
+02_change_it.c   06_my_echo.c     exer_06/
+03_word_cnt.c    07_my_echo.c     exer_06.c
+
+./ch10/exer_04:
+READ_ME    bubble.h   makefile   shadow
+bubble.c   main.c     print.c    swap.c
+
+./ch10/exer_06:
+READ_ME   pgm1.c    pgm2.c
+
+./ch10/exer_08:
+READ_ME   pgm1.c    pgm2.c    pgm3.c    pgm4.c
+
+./ch11:
+00_READ_ME       05_wrt_bkwds.c   10_min_max.c     exer_11.c
+01_cnt_down.c    06_prn_words.c   11_factorial/    exer_16.c
+02_cnt_down.c    07_wrt_words/    exer_02/
+03_cnt_down.c    08_rev_char.c    exer_05.c
+04_prn_bkwds.c   09_patterns.c    exer_09.c
+
+./ch11/07_wrt_words:
+READ_ME       makefile      shadow        wrt_bkwds.h
+main.c        print.c       wrt_bkwds.c
+
+./ch11/11_factorial:
+READ_ME    fact.c     fact.h     main.c     makefile   print.c
+
+./ch11/exer_02:
+READ_ME        main.c         makefile       palindrome.c   palindrome.h
+
+./ch12:
+00_READ_ME       04_prn_cards/    08_stack/        exer_13/
+01_class_info/   05_records/      exer_10/         exer_18.c
+02_class_info/   06_str_to_list/  exer_11/
+03_prn_hearts/   07_stack/        exer_12/
+
+./ch12/01_class_info:
+READ_ME      cl_info.h    get.c        makefile
+chem_class   fail.c       main.c
+
+./ch12/02_class_info:
+READ_ME      cl_info.h    main.c       print.c
+chem_class   get.c        makefile     swap.c
+
+./ch12/03_prn_hearts:
+READ_ME        main.c         print.c
+fct.c          makefile       prn_hearts.h
+
+./ch12/04_prn_cards:
+READ_ME       main.c        print.c
+fct.c         makefile      prn_cards.h
+
+./ch12/05_records:
+READ_ME     fct.c       grades      makefile    swap.c
+birthdays   get.c       main.c      st_data.h   wrt.c
+
+./ch12/06_str_to_list:
+READ_ME      fct.c        main.c       makefile     str_to_l.h
+
+./ch12/07_stack:
+READ_ME    main.c     makefile   stack.c    stack.h
+
+./ch12/08_stack:
+READ_ME    main.c     makefile   stack.c    stack.h
+
+./ch12/exer_10:
+READ_ME    fct.c      main.c     makefile   print.c    spouse.h
+
+./ch12/exer_11:
+READ_ME    fct.c      list.h     makefile
+create.c   input      main.c     print.c
+
+./ch12/exer_12:
+READ_ME    fct.c      list.h     makefile   sort.c
+create.c   input      main.c     print.c
+
+./ch12/exer_13:
+READ_ME    count.c    count.h    input      main.c     makefile   print.c
+
+./ch13:
+00_READ_ME           exer_02.c            exer_10/
+01_dbl_space.c       exer_04.c            exer_22.c
+02_dbl_with_caps.c   exer_05.c            exer_23.c
+03_wrt_bkwds/        exer_06.c            exer_24.c
+04_dbl_space.c       exer_09.c
+
+./ch13/03_wrt_bkwds:
+READ_ME   pgm1.c    pgm2.c
+
+./ch13/exer_10:
+READ_ME      careful.h    graceful.c   makefile
+careful.c    get.c        main.c       prn_rand.c
+
+./ch14:
+00_READ_ME         04_getenv.c        08_verbose/        exer_08/
+01_lcase_dir.c     05_graceful/       exer_01/
+02_ucase_ls.c      06_profiler/       exer_06/
+03_environment.c   07_time_code/      exer_07/
+
+./ch14/05_graceful:
+READ_ME      gchmod.c     gfseek.c     gmalloc.c    grealloc.c   gstat.c
+g_lib.h      gfclose.c    ggetcwd.c    gpclose.c    gremove.c    gutimes.c
+gcalloc.c    gfopen.c     ggetenv.c    gpopen.c     grename.c    makefile
+
+./ch14/06_profiler:
+READ_ME        compare.c      main.c         prof_1         slow_sort.c
+chk_arrays.c   g_lib.h        makefile       prof_2
+cmp_sorts.h    grace.c        print.c        prof_3
+
+./ch14/07_time_code:
+READ_ME         makefile        time_keeper.c   u_lib.h
+main.c          output          time_mult.h
+
+./ch14/08_verbose:
+READ_ME   main.c
+
+./ch14/exer_01:
+READ_ME    main.c     makefile   try_me
+
+./ch14/exer_06:
+READ_ME    makefile
+
+./ch14/exer_07:
+READ_ME    makefile
+
+./ch14/exer_08:
+READ_ME      fortune.h    good_bye.c   main.c       options.c
+fortune.c    get.c        graceful.c   makefile     print.c
+
+./ch15:
+00_READ_ME         04_mi_to_km.c      08_overload.c      exer_01.c
+01_hello.c         05_mi_to_km.c      09_overload.c      exer_05.c
+02_hello.c         06_string.c        10_constructor.c   exer_06.c
+03_to_moon.c       07_string.c        11_danger.c
+
+./extra:
+READ_ME      c_align/     lu_decomp/   mk_cols/     palindrome/  wrt_char/
+
+./extra/c_align:
+READ_ME        chk.c          fname_ext.c    options.c      wrt.c
+adjust.c       error.c        grace.c        try1
+c_align.c      fct.c          main.c         try2
+c_align.h      file_times.c   makefile       untab.c
+
+./extra/lu_decomp:
+READ_ME       in3           lu_decomp.c   matrix.c
+chk.c         in4           lu_decomp.h   oper.c
+fct.c         in4s          main.c        options.c
+in2           ivec.c        makefile      wrt.c
+
+./extra/mk_cols:
+READ_ME     fct.c       matrix.c    oper.c      wrt.c
+compare.c   main.c      mk_cols.c   options.c
+error.c     makefile    mk_cols.h   try
+
+./extra/palindrome:
+READ_ME   v1/       v2/       v3/       v4/       v5/       v6/
+
+./extra/palindrome/v1:
+READ_ME    main.c     makefile
+
+./extra/palindrome/v2:
+READ_ME    main.c     makefile
+
+./extra/palindrome/v3:
+READ_ME    main.c     makefile
+
+./extra/palindrome/v4:
+READ_ME        main.c         makefile       palindrome.c   palindrome.h
+
+./extra/palindrome/v5:
+READ_ME        error.c        in2            makefile       palindrome.h
+action.c       fct.c          in3            options.c      wrt.c
+compare.c      in1            main.c         output
+
+./extra/palindrome/v6:
+READ_ME   main.c
+
+./extra/wrt_char:
+READ_ME      bell         fct.c        main.c       oper.c       wrt.c
+action.c     error.c      grace.c      makefile     options.c    wrt_char.h

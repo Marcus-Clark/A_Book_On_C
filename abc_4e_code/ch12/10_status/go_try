@@ -1,0 +1,23 @@
+#!/usr/bin/csh
+
+## ---
+## Experiment with the status.
+##
+
+echo ---
+echo At the top: status = $status
+try_me
+echo ---
+echo After try_me: status = $status
+try_me
+set val = $status
+echo ---
+echo After try_me again: val = $val
+echo ""
+echo ---
+echo To exit from the while loop, input 0.
+while ($val)
+   try_me
+   set val = $status
+   echo In the loop: val = $val
+end

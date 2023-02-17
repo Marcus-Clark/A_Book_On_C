@@ -1,0 +1,13 @@
+---
+APPENDIX A: THE STANDARD LIBRARY
+
+The code in this directory is related to the
+material in Appenix A in
+
+   C By Dissection, 4th edition,
+   Al Kelley and Ira Pohl,
+   Addison-Wesley, San Francisco, 2001
+
+---
+Files ending in .c contain either C or C++ programs
+that are ready to be compiled and executed.

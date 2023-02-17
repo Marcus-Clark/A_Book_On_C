@@ -1,0 +1,27 @@
+---
+THE GAME OF PAPER, ROCK, SCISSORS:
+
+We have used enumeration types and typedefs to create this game.
+If you want to understand the code, you should play the game
+first.  Here are the instructions, which you can also get
+by typing i when playing the game:
+
+---
+PAPER, ROCK, SCISSORS:
+   In this game p is for "paper," r is for "rock," and s
+   is for "scissors."  Both the player and the machine will
+   choose one of p, r, or s.  If the two choices are the same,
+   then the game is a tie.  Otherwise:
+      "paper covers the rock"     (a win for paper),
+      "rock breaks the scissors"  (a win for rock),
+      "scissors cut the paper"    (a win for scissors).
+
+   There are other allowable inputs:
+      g   for game status   (the number of wins so far),
+      h   for help,
+      i   for instructions  (reprint these instructions),
+      q   for quit          (to quit the game).
+
+   This game is played repeatedly until q is entered.
+
+   Good luck!

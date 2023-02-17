@@ -1,0 +1,33 @@
+---
+STUDENT RECORDS PROGRAM:
+
+The purpose of this program is to illustrate how the programmer
+accesses members of structures, even if the structure itself is
+a member of another structure.
+
+In this program, the student data, or records, are contained in
+two separate files, one named grades and the other named birthdays.
+We open both of the files and read in the data to fill an array of
+type struct student_data.  After we have filled the array, we sort
+the elements of the array by student id and print the results
+on the screen.
+
+Here is a list of the assertions we used in get_student_data():
+
+      assert(cnt == 4);
+      assert(n < MAXNAME);
+      assert(cnt == 5);
+      assert(strcmp(name, sd[i].p.name) == 0);
+      assert(student_id == sd[i].student_id);
+      assert(sd[i].p.birthday.day >= 1);
+      assert(sd[i].p.birthday.day <= 31);
+      assert(strlen(sd[i].p.birthday.month) == 3);
+      assert(sd[i].p.birthday.year >= 0);
+      assert(sd[i].p.birthday.year <= 99);
+
+As a list by themselves, the assertions do not make much sense.
+But the reader should pay attention to these assertions when
+reading the file get.c line by line.  The assertions provide
+validity checks on the data as we get it.  If an assertion
+fails, either we have made a mistake in our program or
+there is a mistake in the data.

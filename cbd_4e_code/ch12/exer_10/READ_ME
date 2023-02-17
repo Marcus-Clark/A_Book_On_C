@@ -1,0 +1,23 @@
+---
+EXERCISE 10 on page 425:
+
+This is an interesting problem with an easy solution.
+
+Because one structure cannot include another before it is
+declared, the code as written will not work.  To get around
+the problem, we can use pointers to structures as members
+rather than the structures themselves.  The compiler will
+be happy with the pointers.
+
+---
+The following two lines near the top of spouse.h are examples
+of incomplete types:
+
+   struct husband;
+   struct wife;
+
+If you want to write the program without these lines,
+you will have to make further changes to the header file.
+Before you do this, compile and execute the program as
+written so that you understand its effects.  Then remove
+the above two lines and see what your compiler says.

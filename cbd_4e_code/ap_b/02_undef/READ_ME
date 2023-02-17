@@ -1,0 +1,39 @@
+---
+THE USE OF #undef
+
+On some Sun machines, the use of the identifier
+   
+   sun
+
+causes problems.  At the top level, some compilers
+use the identifier sun for its own purposes, and
+that gets in the way of ordinary use by the
+programmer.
+
+This problem really is a kind of compiler error,
+although some compiler writers probably disagree.
+
+---
+There are two programs in this directory:
+
+   pgm1.c     pgm2.c
+
+The first program illustrates the problem; the
+second program uses a #undef to correct the
+problem.  After you have tried both programs,
+you should try the following command:
+
+   cc -E pgm1.c > tmp; vi tmp
+
+There is nothing special about vi; use any editor
+that you are familiar with.  You will have to go
+to the bottom of the file to see recognizable
+code.  Look at the declaration to see the
+problem.
+
+---
+Watch out for
+
+   dec
+
+on DEC (= Digital Equipment Corporation) machines.

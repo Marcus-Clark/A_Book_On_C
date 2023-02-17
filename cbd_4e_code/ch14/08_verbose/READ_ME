@@ -1,0 +1,87 @@
+---
+VERBOSE COMPILER OPTION:
+
+When we give the command
+
+   gcc -Wall -v main.c
+
+here is what we see printed on the screen:
+
+   Reading specs from /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/specs
+   gcc version 2.7.0
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/cpp -lang-c -v \
+    -undef -D__GNUC__=2 -D__GNUC_MINOR__=7 -Dsun -Dsparc -Dunix -D__svr4__  \
+    -D__SVR4 -D__GCC_NEW_VARARGS__ -D__sun__ -D__sparc__ -D__unix__         \
+    -D__svr4__ -D__SVR4 -D__GCC_NEW_VARARGS__ -D__sun -D__sparc -D__unix    \
+    -Asystem(unix) -Asystem(svr4) -Acpu(sparc) -Amachine(sparc) -Wall       \
+    main.c /var/tmp/cca00102.i
+   GNU CPP version 2.7.0 (sparc)
+   #include "..." search starts here:
+   #include <...> search starts here:
+    /export/local/gnu/include
+    /export/local/gnu/sparc-sun-solaris2.4/include
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/include
+    /usr/include
+   End of search list.
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/cc1            \
+    /var/tmp/cca00102.i -quiet -dumpbase main.c -Wall -version              \
+    -o /var/tmp/cca00102.s
+   GNU C version 2.7.0 (sparc) compiled by GNU C version 2.7.0.
+    /usr/ccs/bin/as -V -Qy -s -o /var/tmp/cca001021.o /var/tmp/cca00102.s
+    /usr/ccs/bin/as: SC3.1 dev 09 May 1994
+    /usr/ccs/bin/ld -V -Y P,/usr/ccs/lib:/usr/lib -Qy                       \
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/crt1.o         \
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/crti.o         \
+    /usr/ccs/lib/values-Xa.o                                                \
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/crtbegin.o     \
+    -L/export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0              \
+    -L/usr/ccs/bin -L/usr/ccs/lib -L/export/local/gnu/lib                   \
+    /var/tmp/cca001021.o -lgcc -lc -lgcc                                    \
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/crtend.o       \
+    /export/local/gnu/lib/gcc-lib/sparc-sun-solaris2.4/2.7.0/crtn.o
+   ld: Software Generation Utilities (SGU) SunOS/ELF (LK-1.4 (S/I))
+
+
+---
+When we give the command
+
+   CC -v main.c
+
+here is what we see printed on the screen:
+
+   ### CC: Note: LM_LICENSE_FILE = (null)
+   ### CC: Note: NLSPATH =                                                  \
+   /opt/SUNWspro/bin/../SC3.0.1/bin/../lib/locale/C/LC_MESSAGES/%N
+   /opt/SUNWspro/bin/../SC3.0.1/bin/ccfe -y-o -ymain.o +w -y-fbe            \
+   -y/opt/SUNWspro/bin/../SC3.0.1/bin/fbe -y-verbose -O0                    \
+   -ptf /tmp/04120%1.%2 -ptx /opt/SUNWspro/bin/../SC3.0.1/bin/CC            \
+   -ptk "+w -v  -xs " -Xa -D__SUNPRO_CC=0x401 -Dunix -Dsun -Dsparc          \
+   -D__unix -D__sun -D__sparc -D__BUILTIN_VA_ARG_INCR -D__SVR4 -y-s         \
+   -I/opt/SUNWspro/SC3.0.1/include/CC -I/opt/SUNWspro/SC3.0.1/include/cc    \
+   main.c -s /tmp/ccfe.04120.0.s
+   /opt/SUNWspro/bin/../SC3.0.1/bin/tdb_link -ptk "+w -v  -xs "             \
+   -ptx /opt/SUNWspro/bin/../SC3.0.1/bin/CC main.o -o a.out
+   tdb_link : Information: Invoking: "/opt/SUNWspro/bin/../SC3.0.1/bin/CC   \
+   -o a.out  +w -v -xs -ptl main.o".
+   ### CC: Note: LM_LICENSE_FILE = (null)
+   ### CC: Note: NLSPATH =                                                  \
+   /opt/SUNWspro/bin/../SC3.0.1/bin/../lib/locale/C/LC_MESSAGES/%N:         \
+   /opt/SUNWspro/bin/../SC3.0.1/bin/../lib/locale/C/LC_MESSAGES/%N
+   ### CC: Note: LD_LIBRARY_PATH = /export/local/hpnp/jetadmin/lib:         \
+   /opt/SUNWspro/SC2.0:/usr/openwin/lib
+   ### CC: Note: LD_RUN_PATH     = /opt/SUNWspro/lib
+   ### CC: Note: LD_OPTIONS = (null)
+   /usr/ccs/bin/ld -o a.out /opt/SUNWspro/SC3.0.1/lib/crti.o                \
+   /opt/SUNWspro/SC3.0.1/lib/crt1.o /opt/SUNWspro/SC3.0.1/lib/cg89/__fstd.o \
+   /opt/SUNWspro/SC3.0.1/lib/values-xa.o -Y P,/opt/SUNWspro/lib:            \
+   /opt/SUNWspro/SC3.0.1/lib:/usr/ccs/lib:/usr/lib main.o -lsunmath -lm -lC \
+   -lC_mtstubs -lw -lc /opt/SUNWspro/SC3.0.1/lib/crtn.o >&/tmp/ld.04123.0.err
+   /opt/SUNWspro/bin/../SC3.0.1/bin/c++filt -stderr </tmp/ld.04123.0.err
+   rm /tmp/ld.04123.0.err
+   rm main.o
+
+---
+NOTE:
+
+To make the output more readable, some long lines have been broken.
+Wherever this was done, backslashes have been inserted.

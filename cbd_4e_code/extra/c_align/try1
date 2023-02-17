@@ -1,0 +1,9 @@
+---
+Use the -f option on this file
+to see what happens with leading tabs.
+
+
+	one tab		followed by two more    /* xxx */
+		two tabs only    /* xxx */
+
+    no tabs in this line but the line is a very long line = trouble?  /* xxx */

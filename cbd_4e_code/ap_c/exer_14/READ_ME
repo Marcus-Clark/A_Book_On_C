@@ -1,0 +1,8 @@
+---
+MULTIPLICATION BY POWERS OF 2: EXERCISE 14 on page 598:
+
+We have provided C++ code.  You need to explain what happens.
+
+This program will work on machines having either 2- or 4-byte
+words, but on machine with 2-byte words, too much gets printed.
+If you are on such a machine, you should sharpen the code.

@@ -1,0 +1,7 @@
+---
+This is the trace program that is discussed in
+Section 12.6 beginning on page 571 of ABC 4/e.
+
+The space for the elements of the matrix is
+allocated all at once.  Pointer are offset
+so that the indexing starts at 1, not 0.

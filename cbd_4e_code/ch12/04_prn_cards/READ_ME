@@ -1,0 +1,40 @@
+---
+CREATE A DECK OF CARDS, PRINT OUT A HAND, AND PRINT OUT THE HEARTS:
+
+The program in this directory is a variation of the program
+in the directory ../03_prn_hearts.
+
+We have used some typedefs to make the code easier to read.
+
+---
+Note the choice of the identifier cdhs in the following
+constructs:
+
+   enum cdhs   {clubs, diamonds, hearts, spades};
+
+   typedef   enum cdhs     cdhs;
+
+   struct card {
+      int   pips;
+      cdhs  suit;
+   };
+
+An alternative choice might be something like
+
+   enum suit   {clubs, diamonds, hearts, spades};
+
+   typedef   enum suit     suit;
+
+   struct card {
+      int   pips;
+      suit  s;
+   };
+
+If you try rewriting the code with these constructs instead,
+you will see that identifier "suit" is not being used in an
+optimal way with respect to the programmers efforts
+with respect to thinking about the coding.
+
+---
+Bottom line: Choosing names for identifiers is
+	     a nontrivial task.

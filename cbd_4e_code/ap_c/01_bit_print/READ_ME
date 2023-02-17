@@ -1,0 +1,9 @@
+---
+BITWISE PRINTING
+
+The bit_print() function shows what is in memory
+at the bit level.  This can be an extremely useful
+utility if a programmer is writing code that uses
+the bitwise operators.
+
+When in doubt, print it out, even to the bit level.

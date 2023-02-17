@@ -1,0 +1,19 @@
+---
+EXERCISE 12 on page 166:
+
+This program prints a list of prime numbers.
+Well, it will do so after you have completed
+the code.  To see what the output should
+look like, see the file named output.
+
+To compile this program, you can give
+the command
+
+   cc *.c
+
+If you have the GNU C/C++ compiler,
+then you can give the command
+
+   make
+
+to compile this program.

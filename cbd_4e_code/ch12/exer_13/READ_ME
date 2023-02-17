@@ -1,0 +1,28 @@
+---
+EXERCISE 13 on page 426:
+
+Writing an iterative version of the function count()
+is straightforward.  Here, we provide a program that
+will test your function by counting elements in a
+linked list of word obtained from a file.
+
+First compile and execute the program so that you
+understand its effects.  Then rewrite the count()
+function so that it is iterative instead of
+recursive.
+
+---
+This program asks the user a question.
+Observe that the default answer "yes"
+is obtained by a carriage return.
+
+Try it, then read the code that
+makes it happen.
+
+---
+If you are on a UNIX system,
+use this program to count
+the words in the file
+
+   /usr/dict/words
+

@@ -1,0 +1,13 @@
+Input 5 scores:  63  88  97  53  77
+
+Ordered scores:
+
+   score[0] =   97
+   score[1] =   88
+   score[2] =   77
+   score[3] =   63
+   score[4] =   53
+
+               378 is the sum of all the scores
+              75.6 is the class average
+

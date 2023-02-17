@@ -1,0 +1,63 @@
+---
+C BY DISSECTION
+
+This directory contains C/C++ code for the following text:
+
+   C By Dissection, 4th edition,
+   Al Kelley and Ira Pohl,
+   Addison-Wesley, San Francisco, 2001
+
+The code is suitable for the following environments:
+
+   Linux     Macintosh     UNIX
+
+Point your browser at
+
+   ftp.aw.com/cseng/authors/kelley-pohl/cbd4e
+
+to find code suitable for the following environments:
+
+   Windows 95     Windows 98     Windows Me     Windows 2000
+
+---
+WHAT IS IN THIS DIRECTORY
+
+   READ_ME                  -- this file
+   ch01 ch02 ...            -- code organized by chapter
+   ap_a ap_b ...            -- code organized by appendix
+   line_cnt                 -- line counts for most of the files
+   ls_CFR                   -- listing made by the ls -CFR command
+
+---
+NOTE TO THE READER
+
+All the code has been organized by chapter and appendix.  Any filename
+ending in .c in a chapter or appendix directory is either a C or C++
+program ready to be compiled and executed.  The subdirectories within
+a chapter or appendix directory contain programs, or files that make
+up a program.  For example, in the directory
+
+   ch01/exer_03
+
+you will find a "read me" file and two programs:
+
+   READ_ME   pgm1.c   pgm2.c
+
+The two programs are variations on a theme; see the READ_ME file for
+the relevant discussion.  In the directory
+
+   ch04/07_heads_or_tails
+
+you will find the following files:
+
+   READ_ME   p_r_s.h   main.c   compare.c   ...
+
+These files, along with a makefile, comprise a single program that
+is ready to be compiled and executed.
+
+---
+Some things are for fun; see the following files:
+
+   ch05/exer_12.c                ch08/11_greater/READ_ME
+   ch08/exer_18/READ_ME          ch10/exer_04/READ_ME
+   ch11/07_wrt_words/READ_ME

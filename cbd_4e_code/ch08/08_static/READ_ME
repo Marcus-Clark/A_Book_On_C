@@ -1,0 +1,9 @@
+---
+STATIC EXTERNAL VARIABLES
+
+The keyword static, but not extern, is used
+to create a static external variable.  Such
+a variable is known only in the file in
+which it is declared.
+
+See the file random.c for an example.

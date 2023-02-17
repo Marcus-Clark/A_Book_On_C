@@ -1,0 +1,9 @@
+---
+Inorder binary tree traversal: A B C D E F G H I J 
+
+---
+Preorder binary tree traversal: G D B A C F E I H J 
+
+---
+Postorder binary tree traversal: A C B E F D H J I G 
+

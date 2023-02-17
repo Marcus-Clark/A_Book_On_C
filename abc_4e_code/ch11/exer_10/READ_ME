@@ -1,0 +1,21 @@
+---
+This is the program given in exercise 10 on page 544 of ABC 4/e.
+
+Try the following commands:
+
+   cc  -o try_me  pgm.c
+   try_me > tmp1
+   echo "---"
+   echo "In file tmp1:"
+   echo "
+   cat tmp1
+   try_me >& tmp2
+   echo "---"
+   echo "In file tmp2:"
+   echo "
+   cat tmp2
+   echo "---"
+   echo "Are you surprised?"
+   echo "
+
+   rm -f tmp1 tmp2

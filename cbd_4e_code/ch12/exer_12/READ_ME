@@ -1,0 +1,15 @@
+---
+EXERCISE 12 on page 426:
+
+The program in this directory gets you started on this exercise.
+We have done most of the work.  Another function needs to be
+written, and that function needs to be called from main().
+
+---
+STATIC FUNCTIONS
+
+A lot of the work in this program gets done by the swap routines
+written in sort.c.  In the file sort.c we made the various swap
+functions static so that they would be visible in this file
+only.  In a large program, other kinds of swaps might
+occur in other .c files.

@@ -1,0 +1,26 @@
+---
+31 Jan 01
+
+Iterative version in C++, left adjusted when printed.
+
+---
+In this program a palindrome is determined without
+regard to any capitalization.  Thus, for example,
+both "Otto" and "otto" are palindomes.
+
+A lot of the work of the program goes into discarding
+repetitive palindrones.  In the file
+
+   /usr/dict/words
+
+each word is unique, but in most text files not all the
+palindromes will be unique.  For example, in a large
+English text file the palindrome "a" can be
+expected to occur many times.
+
+The algorithm that determines a word is not obvious.
+Look in the function action::get_palindromes()
+to see the algorithm that gets used.
+I tried other algorithms.
+
+The palindromes are left adjusted when printed.

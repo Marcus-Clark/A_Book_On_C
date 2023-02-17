@@ -1,0 +1,25 @@
+---
+CREATE A DECK OF CARDS AND PRINT OUT THE HEARTS:
+
+A playing card, such as the queen of spades has both
+a pip value and a suit value:
+
+    pip value = 12
+   suit value = spade
+
+(Our usage of the word "pip" is correct; see you dictionary.)
+
+To represent a card in a machine, we create a structure with
+two members:
+
+   struct card {
+      int    pips;
+      char   suit;
+   };
+
+A deck of cards is represented by an array of struct cards,
+with the array size equal to 52.
+
+In this program, we create a deck of cards, and then we print
+out the hearts just to see that everything is working
+as it should.

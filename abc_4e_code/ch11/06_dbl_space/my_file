@@ -1,0 +1,55 @@
+---
+This version of the dbl_space program makes use
+of the function
+
+   access()
+
+This function is available in C/C++ systems in
+both UNIX and Windows 95/NT.  Here is the
+function prototype:
+
+   
+   int access(const char *, int);
+
+---
+This is variation of the program on page  510 of ABC 4/e.
+
+WARNING:
+   The program is dangerous because it overwrites
+   whatever filename you type on the command line.
+   Suppose, for example, that you give the
+   following commands:
+
+      cc  -o replicate  pgm.c
+      cp  READ_ME  my_file
+      replicate  my_file
+   
+   The contents of my_file has been changed.
+---
+---
+THIS VERSION OF THE DBL_SPACE PROGRAM MAKES USE
+OF THE FUNCTION
+
+   ACCESS()
+
+THIS FUNCTION IS AVAILABLE IN C/C++ SYSTEMS IN
+BOTH UNIX AND WINDOWS 95/NT.  HERE IS THE
+FUNCTION PROTOTYPE:
+
+   
+   INT ACCESS(CONST CHAR *, INT);
+
+---
+THIS IS VARIATION OF THE PROGRAM ON PAGE  510 OF ABC 4/E.
+
+WARNING:
+   THE PROGRAM IS DANGEROUS BECAUSE IT OVERWRITES
+   WHATEVER FILENAME YOU TYPE ON THE COMMAND LINE.
+   SUPPOSE, FOR EXAMPLE, THAT YOU GIVE THE
+   FOLLOWING COMMANDS:
+
+      CC  -O REPLICATE  PGM.C
+      CP  READ_ME  MY_FILE
+      REPLICATE  MY_FILE
+   
+   THE CONTENTS OF MY_FILE HAS BEEN CHANGED.

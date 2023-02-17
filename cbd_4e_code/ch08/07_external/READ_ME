@@ -1,0 +1,11 @@
+---
+EXTERNAL VARIABLES
+
+This program illustrates how external variables
+are made available to all the functions in all
+the files that comprise the program.
+
+The header file tells everybody which variables
+are external.  The external variables themselves
+are typically declared at the top of the file
+that contains main().

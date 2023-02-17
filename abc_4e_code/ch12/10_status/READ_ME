@@ -1,0 +1,31 @@
+---
+See Section 12.7 beginning on page 579 of ABC 4/e.
+
+In all the programs that we write, main() looks like
+
+   int main(...)
+   {
+      .....
+      return 0;
+   }
+
+The value 0 is received by the operating system, and that
+value can be used to effect other action.  Such actions do
+not concern the beginning programmer, but nonetheless, we
+want to illustrate the fact that main() can return other
+values, and that those values are visible to the
+operating system.
+
+Try the following commands:
+
+   echo ""
+   echo $SHELL                  ## we assume that csh is your shell
+   echo ""
+   cc -v -o try_me try_me.c
+   source go_try
+
+---
+Read the the dissections beginning on pages 581 and 583
+of ABC 4/e to understand the shell script go_try and
+the output that gets printed on your screen when
+you execute the shell script.

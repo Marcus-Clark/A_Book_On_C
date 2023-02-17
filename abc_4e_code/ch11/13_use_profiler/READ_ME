@@ -1,0 +1,15 @@
+---
+As explained in Section 11.14 beginning on page 524 of ABC 4/e,
+we what to use the quicksort program to illustrate how the
+prof utility can be used to create an execution profile.
+
+Try the following commands:
+
+   make                  ## compile the program with the -p option
+   quicksort             ## execute the quicksort program, takes a minute or so
+   echo "---"            ## write a marker on the screen
+   prof quicksort        ## profile the last execution of the program
+
+   rm -f *.o             ## remove the .o files
+   rm -f quicksort       ## remove the executable file
+   rm -f mon.out         ## remove the file produced by the prof command

@@ -1,0 +1,12 @@
+---
+See Section 12.2 on page 558 of ABC 4/e.
+
+Try the following commands:
+
+   cc -v -o pgm1 pgm1.c
+   cc -v -o pgm2 pgm2.c
+   cc -v -o overlay main.c
+   overlay
+
+   rm -f pgm1 pgm2 overlay
+

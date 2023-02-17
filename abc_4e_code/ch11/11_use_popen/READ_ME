@@ -1,0 +1,5 @@
+---
+Two versions of the program given on page 520 of ABC 4/e:
+
+   pgm1.c       -- suitable for MS-DOS
+   pgm2.c       -- suitable for UNIX

@@ -1,0 +1,10 @@
+---
+GRACEFUL FUNCTIONS
+
+This program uses a graceful version of the function
+calloc().  To understand why such a function is useful,
+first execute the program as written.  Then change
+
+   gcalloc       to       calloc
+
+in main.c, recompile the program, and run it again.

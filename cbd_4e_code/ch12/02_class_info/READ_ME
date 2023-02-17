@@ -1,0 +1,11 @@
+---
+CLASS INFORMATION PROGRAM:
+
+In this program we read the class data in the file chem_class
+into an array.  Then we sort on the grade, and print a
+class list.
+
+Observe that the printout is ordered by grade, but within
+a given grade, the names are out of order.
+
+More programming work is required to fix this.

@@ -1,0 +1,31 @@
+---
+TIMING C CODE:
+
+We want to know how long it takes to multiply floats, doubles,
+and long doubles.  This program uses the code in time_keeper.c
+to time multiplication done repetitively in the for loops in
+main().  The answer on our machine is surprising; see
+the file named output.
+
+Note that a call to prn_time() prints the time used since
+the most recent call to either start_time() or prn_time()
+or prn_total_time().  Similarly, a call to prn_total_time()
+prints the time used since the most recent call to
+start_time().
+
+---
+A NOTE ABOUT THE UTILITY LIBRARY
+
+We cannot demonstrate the use of the utility library here.
+Because they are built out of .o files (or .obj files),
+libraries are system-dependent.
+
+We have alluded to the use of a utility library by putting
+the line
+
+   #include "u_lib.h"
+
+in the header file time_mult.h.  However, to make the code
+in this directory self contained, we do not actually use a
+utility library.  Rather, the file time_keeper.c contains
+the one utility function that we need.

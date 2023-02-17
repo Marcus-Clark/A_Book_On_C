@@ -1,0 +1,9 @@
+---
+This is a variation of the program on page 514 of ABC 4/e.
+See the comment in the file pgm.c for details.
+
+Try the following commands:
+
+   cc  -o wrt_backwards  pgm.c
+   wrt_backwards < filename > outfile
+   cat outfile

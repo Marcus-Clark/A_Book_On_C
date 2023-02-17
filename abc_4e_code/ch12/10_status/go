@@ -1,0 +1,14 @@
+#!/bin/csh
+
+## ---
+## This shell script performs the commands
+## that are suggested in the READ_ME file.
+##
+
+   echo ""
+   echo $SHELL                  ## we assume that csh is your shell
+   echo ""
+   cc -v -o try_me try_me.c
+   source go_try
+
+   rm -f try_me

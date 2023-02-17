@@ -1,0 +1,10 @@
+#!/bin/csh
+
+## ---
+## This shell script performs the commands
+## that are suggested in the READ_ME file.
+##
+
+   cc  -o wrt_backwards  pgm.c
+   wrt_backwards < filename > outfile
+   cat outfile

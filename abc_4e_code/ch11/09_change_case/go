@@ -1,0 +1,13 @@
+#!/bin/csh
+
+## ---
+## This shell script performs the commands
+## that are suggested in the READ_ME file.
+##
+
+   cc  -o change_case  pgm.c
+   rm -f outfile
+   change_case infile outfile
+   cat infile
+   echo "---"
+   cat outfile

@@ -1,0 +1,22 @@
+---
+This is the program on page 515 of ABC 4/e.
+The program does not explain to the user
+how it gets used.  For details, read the
+dissection beginning on page 515.
+
+Try the following commands:
+
+   cc  -o change_case  pgm.c
+   rm -f outfile
+   change_case infile outfile
+   cat infile
+   echo "---"
+   cat outfile
+
+If you repeat the command
+
+   change_case infile outfile
+
+you will see that the file outfile does not
+get altered.  Read the dissection to
+understand why.

@@ -1,0 +1,11 @@
+---
+EXERCISE 8 on page 355:
+
+Because our compiler is not happy with pgm1.c,
+we rewrote the code slightly in pgm2.c.
+
+CAUTION:
+   On our system the executable program does not
+   exhibit a run-time error.  If a run-time error
+   occurs on your system, you can comment out the
+   line in error.  We have done this in pgm3.c.

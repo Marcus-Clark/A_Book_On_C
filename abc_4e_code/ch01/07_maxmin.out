@@ -1,0 +1,9 @@
+This program reads an integer value for n, and then
+processes n real numbers to find max and min values.
+
+Input n:  5
+
+Input 5 real numbers:  737.7799  -11.2e+3  -777  0.001  3.14159
+
+Maximum value:    737.780
+Minimum value: -11200.000

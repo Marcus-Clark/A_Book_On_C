@@ -1,0 +1,13 @@
+---
+CHAPTER 15: FROM C TO C++
+
+The code in this directory is related to the material
+in Chapter 15 in
+
+   C By Dissection, 4th edition,
+   Al Kelley and Ira Pohl,
+   Addison-Wesley, San Francisco, 2001
+
+---
+Files ending in .c contain a C++ program
+that is ready to be compiled and executed.

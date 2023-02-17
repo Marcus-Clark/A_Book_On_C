@@ -1,0 +1,59 @@
+---
+EXERCISE 6 on page 355:
+
+To use assertions, the programmer must add the line
+
+   #include <assert.h>
+
+to the header file, or at the top of the program, if the
+program is being written in one file.
+
+Exercise 6 is a simple exercise, so we have done it for you.
+In pgm1.c, we have changed the #define line as follows:
+
+   from: #define   MAXLINE   100
+     to: #define   MAXLINE   10
+
+This makes testing of the assertion easier.
+
+Assertions on some C/C++ systems causes a core dump.  This means
+that an image of what was in memory at the time of touble gets
+written into a file, which on most systems is named "core."  The
+file itself is also refered to as a core dump.  This file is not
+readable by humans, and many beginning programmers neither use
+the core dump or want it.  If you do not get rid of it, the file
+sits in your directory doing nothing except taking up a lot of
+disk space.
+
+If you are on a UNIX system using the C-shell, try the
+following command:
+
+   limit
+
+On our system, here is what gets printed:
+
+   cputime         unlimited
+   filesize        unlimited
+   datasize        2097148 kbytes
+   stacksize       8192 kbytes
+   coredumpsize    unlimited
+   descriptors     64 
+   memorysize      unlimited
+
+The sixth line is of interest to us:
+
+   coredumpsize    unlimited
+
+Give the following command to get a new limit:
+
+   limit coredumpsize 0
+
+To see that the change has taken effect, give the command
+
+   limit
+
+again.  With coredumpsize set to 0, no core dump file gets
+written, even if an assertion fails.
+
+---
+In pgm2.c, we have replaced the assertion with another construct.

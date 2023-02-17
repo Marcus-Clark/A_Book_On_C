@@ -1,0 +1,34 @@
+---
+FACTORIAL PROGRAM
+
+The GNU C++ compiler comes bundled with the NIH (National Institute
+of Health) class library, and this library contains code for the class
+Integer.  Variables of type Integer can take very large values.  If you
+have access to a GNU C++ system, you can try the factorial program that
+we have written here.
+
+Here is some example output:
+
+100! =
+
+   9332621544394415268169923885626670049071596826438162146859296389521759
+   9993229915608941463976156518286253697920827223758251185210916864000000
+   000000000000000000
+
+Observe that 100! ends with 24 zeros.  It is easy to check that this is
+correct.  Further checks on the accuracy of this number are not so easy.
+
+In the file prn.c you will see that we have inserted a newline character
+after every 70 digits.  If we did not do this, then we would have very
+long lines.
+
+Observe that the factorial() function that we wrote in fact.c is very
+elementary and natural.  All the hard coding work has been encapsulated
+in the NIH class library.  Thus the programmer who uses the library only
+has to write code that deals with objects, in our case Integers.
+
+---
+In the future, the Standard Template Library will provide many standard
+classes, including a large integer class.  Eventually, we expect all C++
+compilers to incorporate this standard.  Then, a program such as this
+one will not be tied to a specific C++ system.

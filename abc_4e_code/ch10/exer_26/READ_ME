@@ -1,0 +1,7 @@
+---
+See exercise 26 on page 489 of ABC 4/e.
+
+Try the following commands:
+
+  make
+  a.out < input

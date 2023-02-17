@@ -1,0 +1,28 @@
+---
+STACK OPERATIONS IN C:
+
+In this program, the user is asked to input a line.
+The characters in the line are put on a stack.  Then
+the characters are read off of the stack and printed.
+This causes the line to be printed in reverse order
+on the screen.
+
+The object of this program is not to reverse a line;
+we already know how to do that.  The point is to
+exercise the stack operations.
+
+---
+After you have executed the program and understand its
+effects, you should change one of the lines in main.c
+as follows:
+
+   from: #define   MAXDATA   1000
+     to: #define   MAXDATA   10
+
+Recompile the program and run it again.
+What happens when you enter a long line?
+
+---
+For a similar program written in C++, see the directory
+
+   ../08_stack

@@ -1,0 +1,21 @@
+---
+GRACEFUL LIBRARY:
+
+Here are some functions that can go in a graceful library.
+On a UNIX system, to learn what the underlying code is
+supposed to do, remove the leading "g" and the ending ".c"
+in the filename and invoke man to read about it.
+
+For example, to learn what the function gutimes() in the
+file gutimes.c, is supposed to do, give the command
+
+   man utimes
+
+---
+On a UNIX system, try the following commands:
+
+   make              // to make the library
+
+   ar -t g_lib.a     // to see the titles of the functions in the library
+
+   nm g_lib.a        // to see more information

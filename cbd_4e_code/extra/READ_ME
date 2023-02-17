@@ -1,0 +1,15 @@
+---
+31 Jan 01
+
+This directory contains examples of programs
+that are too big to put into a textbook.
+
+On page 146 of CBD 4/e we wrote that we would
+provide more examples of multifile programs.
+Here are some examples:
+
+   c_align     -- align comments on the right
+   lu_decomp   -- find the LU-decomposition of a matrix
+   mk_cols     -- make columns using the words in a file
+   palindrome  -- versions of the palindrome program
+   wrt_char    -- write character information on the screen

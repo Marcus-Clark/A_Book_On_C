@@ -1,0 +1,7 @@
+---
+What happens if you use the dbl_out program repeatedly?
+Try the following commands:
+
+   dbl_out < infile | dbl_out
+
+   dbl_out < infile | dbl_out | dbl_out

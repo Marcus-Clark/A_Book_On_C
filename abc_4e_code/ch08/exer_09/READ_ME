@@ -1,0 +1,16 @@
+---
+The two output files were created by
+executing the following commands:
+
+   cc -o pgm1 pgm1.c
+   cc -o pgm2 pgm2.c
+   pgm1 < /usr/dict/words > output1
+   pgm2 < /usr/dict/words > output2
+
+To save space, most of the lines in the
+two files output1 and output2 were then
+deleted.  To see relative running times,
+give the following commands:
+
+   grep Clock output1
+   grep Clock output2

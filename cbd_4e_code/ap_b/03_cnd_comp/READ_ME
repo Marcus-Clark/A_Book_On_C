@@ -1,0 +1,9 @@
+---
+CONDITIONAL COMPILATION
+
+There are two programs in this directory:
+
+   pgm1.c     pgm2.c
+
+The first one works; the second one will
+not compile.

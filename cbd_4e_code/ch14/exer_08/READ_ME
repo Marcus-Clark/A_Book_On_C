@@ -1,0 +1,88 @@
+---
+FIND A FORTUNE: Exercise 8 on page 500:
+
+In the 1980s, when Berkeley UNIX was prevalent, the fortune command
+could be found on most, but not all, UNIX systems.  Today, Berkeley
+UNIX is much less prevalent than it was, and probably less than half
+of the UNIX systems offer the fortune command.  If you are on a UNIX
+system, try the following commands:
+
+   man fortune       // to read about the command
+
+   fortune           // to get a fortune
+
+If you cannot locate a UNIX machine that provides fortunes, this
+exercise will be of little interest to you.
+
+---
+The fortune command gets a fortune from its database in a random
+fashion and prints it on the screen.  Some fortunes are short and
+pithy, others are longer and may contain an historical or
+philosophical message.  Here are two examples:
+
+   ---
+   First fortune:
+
+   f u cn rd ths, u cn gt a gd jb n cmptr prgrmmng.
+   
+   ---
+   Second fortune:
+
+      One of the questions that comes up all the time is: How
+   enthusiastic is our support for UNIX?
+      Unix was written on our machines and for our machines
+   many years ago.  Today, much of UNIX being done is done on
+   our machines.  Ten percent of our VAXs are going for UNIX
+   use.  UNIX is a simple language, easy to understand, easy to
+   get started with.  It's great for students, great for somewhat
+   casual users, and it's great for interchanging programs between
+   different machines.  And so, because of its popularity in these
+   markets, we support it.  We have good UNIX on VAX and good UNIX
+   on PDP-11s.
+      It is our belief, however, that serious professional users
+   will run out of things they can do with UNIX. They'll want a
+   real system and will end up doing VMS when they get to be serious
+   about programming.
+      With UNIX, if you're looking for something, you can easily and
+   quickly check that small manual and find out that it's not there.
+   With VMS, no matter what you look for -- it's literally a five-
+   foot shelf of documentation -- if you look long enough it's there.
+   That's the difference -- the beauty of UNIX is it's simple; and
+   the beauty of VMS is that it's all there.
+
+      -- Ken Olsen, President of DEC, 1984
+
+
+---
+Suppose you want to see if you can find other fortunes that mention
+Ken Olsen, or you want to look for fortunes with, say, the phrase
+
+   fortune cookie program
+
+in them.  You can give the fortune command repeatedly, but most
+likely you will not see anything relevant.  The fortunes are pulled
+in a random fashion from a rather large, inaccessible database, and
+there is little chance of seeing a fortune that contains a desired
+phrase.
+
+---
+This program finds fortunes that may be of interest to you.  The
+program prompts the user for a phrase, and then runs the fortune
+program repeatedly, looking for a match with the phrase.  If a
+match is found, the fortune is saved to a file and e-mail is sent
+to alert the user that one or more fortunes were saved.
+
+The reason for using e-mail is that the program may run for 20
+minutes or more.  You can put the program in background and forget
+about it.  You will be notified later about the results of your
+search.
+
+---
+CAUTION:
+
+   You may have to change all the
+
+      extern const int   ...
+   
+   lines into #define lines.  Not all C/C++ compilers are
+   as cavalier about external constants as is GNU C/C++.

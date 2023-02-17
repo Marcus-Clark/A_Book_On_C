@@ -1,0 +1,21 @@
+#!/bin/csh
+
+## ---
+## This shell script performs the commands
+## that are suggested in the READ_ME file.
+##
+
+   make                  ## compile the program with the -p option
+   quicksort             ## execute the quicksort program, takes a minute or so
+   echo "---"            ## write a marker on the screen
+   prof quicksort        ## profile the last execution of the program
+
+   rm -f *.o             ## remove the .o files
+   rm -f quicksort       ## remove the executable file
+   rm -f mon.out         ## remove the file produced by the prof command
+
+
+## ---
+## The file mon.out gets created when quicksort is invoked.
+## The prof command uses mon.out to create a profile of
+## the most recent execution of the quicksort program.

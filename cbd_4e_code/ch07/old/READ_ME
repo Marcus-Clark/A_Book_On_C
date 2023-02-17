@@ -1,0 +1,27 @@
+---
+THE GAME PAPER, ROCK, SCISSORS
+
+In this game
+
+   p is for "paper"
+   r is for "rock"
+   s is for "scissors"
+
+Both the player and the machine will choose one
+of p, r, or s.  If the two choices are the same,
+then the game is a tie.  Otherwise:
+
+   "paper covers the rock"     (a win for paper)
+   "rock breaks the scissors"  (a win for rock)
+   "scissors cut the paper"    (a win for scissors)
+
+There are other allowable inputs:
+
+   g  for game status   (print number of wins)
+   h  for help          (print short instructions)
+   i  for instructions  (print these instructions)
+   q  for quit          (quit the game)
+
+This game is played repeatedly until q is entered.
+
+Good luck!

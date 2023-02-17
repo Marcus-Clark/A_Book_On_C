@@ -1,0 +1,36 @@
+---
+OVERLOADING IN C++
+
+This C++ code illustrates the overloading of
+a function.  There are two different max()
+functions being used, even though the name
+"max" is the same for each of them.
+
+This C++ code also illustrates how a program
+can be written in more than one file. Note that
+the header file find_max.h gets included at the
+top of each of the .c files.
+
+To compile this program, you can give
+the command
+
+   CC *.c
+
+If you have the GNU C/C++ compiler,
+then you can give the command
+
+   make
+
+to compile this program.
+
+---
+Have you noticed that some of our C++ programs
+do not have the line
+
+   return 0;
+
+at the end of main()?  Recently, the ANSI C++
+committee made the inclusion of that line
+optional.  If the line is missing, then the
+value 0 gets returned to the operating
+system by default.

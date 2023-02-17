@@ -1,0 +1,8 @@
+
+   cat try_me
+
+   unsetenv ABC
+   pgm
+   setenv ABC "Try me\!"       ## ! is a special character to the c-shell
+   pgm
+

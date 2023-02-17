@@ -1,0 +1,42 @@
+---
+EXERCISE 7 on page 259:
+
+POSSIBLE TROUBLE on Sun machines
+
+C/C++ systems on Sun Microsystems machines often use the
+identifier sun as a symbolic constant.  When this occurs,
+the programmer cannot use sun as an identifier in a
+straightforward manner.
+
+   pgm1.c: This program will not compile on
+	   many C/C++ systems on Sun machines
+
+   pgm2.c: #undef is used to fix the problem
+
+---
+Here is an example of a construct that might not work on some
+C/C++ systems on DEC (= Digital Equipment Corporation) machines.
+
+   enum month {jan, feb, mar, apr, may, jun,
+	       jul, aug, sep, oct, nov, dec};
+   
+   typedef   enum month   month;
+
+   .....
+
+   int main(void)
+   {
+      int     i;
+      month   m;
+
+      .....
+
+      if (m == dec)
+	 printf("Happy holidays!\n");
+      
+---
+If a DEC machine uses the identifier dec at the systems level,
+this can get in the way of what the programmer is trying to do.
+
+This kind of error is difficult to deal with.  The compiler
+does not explain the problem adequately.

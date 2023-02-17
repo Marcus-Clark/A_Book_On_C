@@ -1,0 +1,6 @@
+---
+ forth. so and word, last the to next the then file, the in word last 
+the with starting file, output standard the to file the in words the 
+all write and file a open we program, this In BACKWARDS: FILE A FROM 
+WORDS WRITE --- 
+

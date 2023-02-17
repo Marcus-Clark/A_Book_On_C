@@ -1,0 +1,25 @@
+---
+TRADITIONAL C IS DIFFERENT
+
+On many UNIX systems, to compile this program,
+you must give the command
+
+   cc main.c -lm
+
+The -lm option tells the loader to attach the
+mathematics library.  In ANSI C systems, the
+programmer really should not have to use this
+option.  However, the use of the -lm option
+predates the days of ANSI C, and many UNIX
+systems still do things the old way.
+
+---
+Note that in our program we wrote
+
+   int main()
+
+instead of
+
+   int main(void)
+
+In traditional C, there is no keyword void.

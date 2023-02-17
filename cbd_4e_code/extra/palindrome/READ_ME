@@ -1,0 +1,11 @@
+---
+31 Jan 01
+
+Versions of the palindrome program:
+
+   v1: iterative version in C with subscripts
+   v2: recursive version in C with subscripts
+   v3: recursive version in C with pointers
+   v4: recursive version in C++ with pointers
+   v5: iterative version in C++, left adjusted when printed
+   v6: palindrome C code from the Internet

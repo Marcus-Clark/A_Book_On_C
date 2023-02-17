@@ -1,0 +1,19 @@
+---
+EXERCISE 1 on page 498:
+
+First compile the program and put the executable code
+in the file named pgm.  If you are using the c-shell,
+try the following commands:
+
+   vi go                      // so you will know what is in the file
+
+   man source                 // so you will know what the command does
+
+   source go                  // execute the commands in go
+
+   (source go) > output       // capture the results in a file
+
+---
+NOTE:
+
+The above suggestions make sense only in a UNIX environment.

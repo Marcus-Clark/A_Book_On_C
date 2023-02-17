@@ -1,0 +1,12 @@
+
+The square root of x and x raised
+to the x power will be computed.
+---
+
+Input x:  2
+
+           x = 2.000000000000000e+000
+     sqrt(x) = 1.414213562373095e+000
+   pow(x, x) = 4.000000000000000e+000
+
+Input x:  

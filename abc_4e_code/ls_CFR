@@ -1,0 +1,308 @@
+.:
+ch00/     ch03/     ch06/     ch09/     ch12/     ls_CFR
+ch01/     ch04/     ch07/     ch10/     ch13/     READ_ME
+ch02/     ch05/     ch08/     ch11/     ch14/
+
+./ch00:
+01_hello.c
+
+./ch01:
+01_sea_box.c         06_running_sum.out   11_abc.c
+02_marathon.c        07_maxmin.c          11_abc.out
+02_marathon.out      07_maxmin.in         12_cnt_letters.c
+03_pacific_sea.c     07_maxmin.out        12_cnt_letters.out
+03_pacific_sea.h     08_try_to.c          13_double_out.c
+03_pacific_sea.out   09_bubble_sort.c     exer_05.c
+04_in_out.c          09_bubble_sort.in    exer_09.c
+04_in_out.out        09_bubble_sort.out   exer_10.c
+05_sum.c             10_nice_day.c        exer_12.c
+06_running_sum.c     10_nice_day.in       exer_12.out
+06_running_sum.in    10_nice_day.out      exer_12_alt.c
+
+./ch02:
+01_sum.c          02_pow_of_2.out   03_prn_rand.out   exer_18.c
+02_pow_of_2.c     03_prn_rand.c     05_rand_time.c    exer_18.out
+
+./ch03:
+01_sizeof.c        04_sqrt_pow.out    exer_02.c          exer_17.c
+02_double_out.c    05_dec_hex_oct.c   exer_07.c          exer_25.c
+03_capitalize.c    07_comp_diff.c     exer_07.out
+04_sqrt_pow.c      08_unsigned.c      exer_09.c
+
+./ch04:
+01_cnt_char.c      02_boolean.c       03_nonrobust.c     04_fibonacci.out
+01_cnt_char.out    02_boolean.out     04_fibonacci.c     exer_30.c
+
+./ch05:
+01_tbl_of_pow.c     03_pgm/             06_wrt_bkwrds.c     exer_05.c
+01_tbl_of_pow.out   04_global.c         07_hanoi/           exer_06.c
+02_compute_sum.c    05_extern/          exer_02.c           exer_22.c
+
+./ch05/03_pgm:
+fct.c      main.c     makefile   pgm.h      wrt.c
+
+./ch05/05_extern:
+fct.c      main.c     makefile
+
+./ch05/07_hanoi:
+get.c      hanoi.h    main.c     makefile   move.c     READ_ME
+
+./ch06:
+01_location.c            11_sum3.c                exer_03.c
+01_location.out          12_sort_words/           exer_10.c
+02_swap/                 13_my_echo.c             exer_11.c
+03_bubble.c              14_ragged.c              exer_23/
+04_array/                14_ragged.out            exer_24.c
+05_mergesort/            15_sum_sqr/              exer_31.c
+06_frogs.c               16_bisection/            exer_33.c
+07_word_cnt.c            17_kepler/               exer_39.c
+08_strlen.c              18_arrays_of_ptrs/       exer_44.c
+09_strcat.c              18_what_gets_printed.c
+10_sum2.c                24_echo.c
+
+./ch06/02_swap:
+main.c     makefile   swap.c
+
+./ch06/04_array:
+array.h    fct.c      main.c     makefile
+
+./ch06/05_mergesort:
+main.c        makefile      merge.c       mergesort.c   mergesort.h
+
+./ch06/12_sort_words:
+error.c        makefile       sort_words.c   wrt.c
+main.c         sort.h         swap.c
+
+./ch06/15_sum_sqr:
+fct.c       main.c      makefile    sum_sqr.c   sum_sqr.h
+
+./ch06/16_bisection:
+bisection.c   fct.c         find_root.h   main.c        makefile
+
+./ch06/17_kepler:
+bisection.c   kepler.c      kepler.h      main.c        makefile
+
+./ch06/18_arrays_of_ptrs:
+bisection.c    fct.c          find_roots.h   main.c         makefile
+
+./ch06/exer_23:
+add.c      add.h      main.c     makefile   wrt.c
+
+./ch07:
+01_bit_print/            04_cr_emp_data.c         exer_27/
+02_pack.c                05_paper_rock_scissors/
+03_unpack.c              exer_08/
+
+./ch07/01_bit_print:
+bit_print.c   main.c        makefile
+
+./ch07/05_paper_rock_scissors:
+compare.c     makefile      report.c      wrt.c
+main.c        p_r_s.h       selection.c
+
+./ch07/exer_08:
+bit_print.c   main.c        makefile
+
+./ch07/exer_27:
+bit_print.c   main.c        makefile
+
+./ch08:
+01_try_qsort.c       07_quicksort.c       exer_10.c
+02_fract_lexico/     exer_01.c            exer_13/
+03_apple_pie.c       exer_02.c            exer_14.c
+04_stringization.c   exer_04/             exer_16.c
+05_assert.c          exer_06.c            exer_17.c
+06_quicksort/        exer_09/             exer_22.c
+
+./ch08/02_fract_lexico:
+compare.c   main.c      makefile    sort.h
+
+./ch08/06_quicksort:
+find_pivot.c   makefile       quicksort.c    wrt.c
+main.c         partition.c    quicksort.h
+
+./ch08/exer_04:
+a_b_c.c    a_b_c.h    makefile
+
+./ch08/exer_09:
+output1   output2   pgm1.c    pgm2.c    READ_ME
+
+./ch08/exer_13:
+pgm1.c    pgm2.c    READ_ME
+
+./ch09:
+01_fruit_veg.c   06_union.c       exer_02.c        exer_26.c
+02_casanova.c    07_check_bits/   exer_03.c        exer_29.c
+03_grade_class/  08_check_bits/   exer_06.c
+04_complex/      09_stack/        exer_24.c
+05_poker/        exer_01.c        exer_25.c
+
+./ch09/03_grade_class:
+class_info.h   fail.c         main.c         makefile
+
+./ch09/04_complex:
+complex.h   get.c       makefile    READ_ME     wrt.c
+error.c     main.c      oper.c      skip.c
+
+./ch09/05_poker:
+main.c     makefile   poker.c    poker.h    swap.c     wrt.c
+
+./ch09/07_check_bits:
+bit_print.c    check_bits.h   main.c         makefile       READ_ME
+
+./ch09/08_check_bits:
+bit_print.c    check_bits.h   main.c         makefile       READ_ME
+
+./ch09/09_stack:
+main.c     makefile   stack.c    stack.h
+
+./ch10:
+01_string_to_list/  05_stack/           09_binary_tree/     exer_19/
+02_string_to_list/  06_polish_stack/    10_general_tree/    exer_20/
+03_string_to_list/  07_polish_stack/    11_general_tree/    exer_26/
+04_string_to_list/  08_queue/           exer_01/
+
+./ch10/01_string_to_list:
+list.h          main.c          makefile        str_to_list.c
+
+./ch10/02_string_to_list:
+list.h          main.c          makefile        str_to_list.c
+
+./ch10/03_string_to_list:
+list.c          list.h          main.c          makefile        str_to_list.c
+
+./ch10/04_string_to_list:
+input           list.h          makefile        wrt.c
+list.c          main.c          str_to_list.c
+
+./ch10/05_stack:
+main.c     makefile   stack.c    stack.h
+
+./ch10/06_polish_stack:
+eval.c     main.c     po_out     stack.c
+fill.c     makefile   polish.h   wrt.c
+
+./ch10/07_polish_stack:
+eval.c     main.c     polish.h   stack.c
+fill.c     makefile   READ_ME    wrt.c
+
+./ch10/08_queue:
+input_1    input_2    main.c     makefile   output     queue.c    queue.h
+
+./ch10/09_binary_tree:
+create.c      makefile      traversal.c
+main.c        output        tree.h
+
+./ch10/10_general_tree:
+gtree.c       main.c        output        wrt.c
+gtree.h       makefile      traversal.c
+
+./ch10/11_general_tree:
+build.c       gtree.h       makefile      traversal.c
+gtree.c       main.c        READ_ME       wrt.c
+
+./ch10/exer_01:
+pgm1.c   pgm2.c
+
+./ch10/exer_19:
+eval.c     main.c     polish.h   stack.c
+fill.c     makefile   READ_ME    wrt.c
+
+./ch10/exer_20:
+eval.c     main.c     polish.h   stack.c
+fill.c     makefile   READ_ME    wrt.c
+
+./ch10/exer_26:
+input      main.c     makefile   queue.c    queue.h    READ_ME
+
+./ch11:
+01_printf.c        07_wrt_backwards/  13_use_profiler/   exer_23.c
+02_printf.c        08_wrt_backwards/  14_time_keeper/    exer_28/
+03_scanf/          09_change_case/    exer_08.c          exer_29/
+04_dbl_space/      10_use_system/     exer_10/           exer_30.c
+05_dbl_space/      11_use_popen/      exer_11/
+06_dbl_space/      12_environment/    exer_19.c
+
+./ch11/03_scanf:
+input      main.c     makefile
+
+./ch11/04_dbl_space:
+input    output   pgm.c
+
+./ch11/05_dbl_space:
+go        input     my_file   pgm.c     READ_ME
+
+./ch11/06_dbl_space:
+go        input     my_file   pgm.c     READ_ME
+
+./ch11/07_wrt_backwards:
+filename   infile     outfile    pgm.c      READ_ME
+
+./ch11/08_wrt_backwards:
+filename   go         infile     outfile    pgm.c      READ_ME
+
+./ch11/09_change_case:
+go        infile    outfile   pgm.c     READ_ME
+
+./ch11/10_use_system:
+pgm1.c    pgm2.c    READ_ME
+
+./ch11/11_use_popen:
+pgm1.c    pgm2.c    READ_ME
+
+./ch11/12_environment:
+pgm1.c   pgm2.c
+
+./ch11/13_use_profiler:
+find_pivot.c   main.c         partition.c    quicksort.h
+go             makefile       quicksort.c    READ_ME
+
+./ch11/14_time_keeper:
+main.c          makefile        time_keeper.c   time_keeper.h
+
+./ch11/exer_10:
+go        pgm.c     READ_ME
+
+./ch11/exer_11:
+careful.c    graceful.c   makefile     wrt_rand.h
+get.c        main.c       wrt_rand.c
+
+./ch11/exer_28:
+makefile
+
+./ch11/exer_29:
+makefile
+
+./ch12:
+01_fork.c         05_use_pipes.c    09_matrix/        exer_09.c
+02_fork.c         06_use_signal.c   10_status/        exer_14/
+03_fibonacci.c    07_dining.c       exer_02.c
+04_overlay/       08_dining/        exer_04.c
+
+./ch12/04_overlay:
+go        main.c    pgm1.c    pgm2.c    READ_ME
+
+./ch12/08_dining:
+dining_philosophers.h   main.c
+fct.c                   makefile
+
+./ch12/09_matrix:
+chk.c      main.c     READ_ME    trace.c    wrt.c
+fill.c     makefile   space.c    trace.h
+
+./ch12/10_status:
+go         go_try     READ_ME    try_me.c
+
+./ch12/exer_14:
+chk.c      main.c     READ_ME    trace.c    wrt.c
+fill.c     makefile   space.c    trace.h
+
+./ch13:
+01_improved.c     03_kilometers.c   exer_04/
+02_improved.c     04_add.c
+
+./ch13/exer_04:
+main.c     makefile   READ_ME
+
+./ch14:
+01_improved.java

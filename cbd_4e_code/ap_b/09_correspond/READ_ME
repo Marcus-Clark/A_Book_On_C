@@ -1,0 +1,65 @@
+---
+CORRESPONDING FUNCTIONS
+
+Occasionally, dealing with macros instead of functions
+can cause problems.  An example might be
+
+   putchar(c += 2);
+
+What happens when an expression such as c += 2 is passed
+as an argument to the macro getchar() is system-dependent.
+(On our system it seems to work as expected.)
+
+In ANSI C, all of the macros available via the standard
+header files are also available as functions.
+The two programs in this directory
+
+   pgm1.c     pgm2.c
+
+illustrate how to get corresponding functions instead
+of macros.
+
+---
+EXPERIMENT
+
+We made a large file by concatenating some other files
+that we had, and we put the file in
+
+   /tmp/garbage
+
+The garbage file had more that 10 million characters in
+it, and approximately 21% of the characters were letters.
+After we did this, we gave the following commands:
+
+   gcc pgm1.c
+   time a.out < /tmp/garbage
+
+The running time for the program was
+
+   25.0u 0.0s 0:27 89% 0+0k 0+0io 0pf+0w
+
+Next, we removed the two lines
+
+   #undef isalpha
+   #undef getchar
+
+from pgm1.c, recompiled the program, and ran the experiment
+again.  This time we found that the running time for the
+program was
+
+   7.0u 0.0s 0:08 86% 0+0k 0+0io 0pf+0w
+
+---
+CONCLUSION:
+
+The use of macros instead of functions can have a significant
+effect on the run-time efficiency of a program.
+
+---
+NOTE:
+
+Give the command
+
+   man time
+
+to read about the output of the time command.

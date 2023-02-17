@@ -1,0 +1,9 @@
+---
+01 Jan 01
+
+Recursive version in C++ with pointers.
+
+---
+The function is_palindrome() can be written
+either iteratively or recursively.  If you
+are ambitious, you might try it both ways.

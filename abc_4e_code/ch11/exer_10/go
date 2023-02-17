@@ -1,0 +1,26 @@
+#!/bin/csh
+
+## ---
+## This shell script performs the commands
+## that are suggested in the READ_ME file.
+##
+
+   cc  -v  -o try_me  pgm.c
+   try_me > tmp1
+   echo "---"
+   echo "In file tmp1:"
+   echo ""
+   cat tmp1
+   echo ""
+   try_me >& tmp2
+   echo "---"
+   echo "In file tmp2:"
+   echo ""
+   cat tmp2
+   echo ""
+   echo "---"
+   echo "Are you surprised?  [You should be.]"
+   echo ""
+
+   rm -f try_me                  ## remove the executable file
+   rm -f tmp1 tmp2               ## remove the temporary files

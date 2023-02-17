@@ -1,0 +1,15 @@
+---
+EXERCISE 14 on page 167
+
+Prime Number Theorem:
+
+     lim    (pi(x) - x log(x)) = 0
+   x -> inf
+
+where pi(x) is the number of primes
+less than or equal to x.
+
+---
+Compile and run the program to see
+what happens.  Then rewrite the
+program.

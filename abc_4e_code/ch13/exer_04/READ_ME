@@ -1,0 +1,12 @@
+---
+The GNU C++ compiler, g++, provides the header file
+
+   Integer.h
+
+for working with big integers.  The latest versions
+of the compiler requires that the library
+
+   libg++.a
+
+be made available to it.  We provide access via the
+makefile.

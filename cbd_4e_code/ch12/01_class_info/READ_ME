@@ -1,0 +1,21 @@
+---
+CLASS INFORMATION PROGRAM:
+
+This program reads class data from the file chem_class, counts the
+number of failing grades, and prints this information on the screen.
+
+Getting the data out of the file and into an array is the more
+challenging part of this program.  The programming ideas we used
+to accomplish this will be explained in later chapters.  These
+more advanced ideas include how to open a file and using sscanf(),
+the string version of scanf().
+
+Note our use of the control string "%s%d %c" as the second argument
+in sscanf() in the file get.c.  Here are the relevant lines:
+
+   cnt = sscanf(line, "%s%d %c",
+	    last_name, &class[i].student_id, &class[i].grade);
+
+The blank in the control string is essential; "%s%d%c" will not work.
+With one or more blanks, optional white space is matched in the
+input stream.  See page 436 in Chapter 13 of the text.

@@ -1,0 +1,16 @@
+---
+EXPERIMENT WITH THE MAKE COMMAND:
+
+Note carefully that the indented lines in the makefile begin
+with a tab character.  This is a design flaw in the make
+utility: the actions specified in a makefile require
+the use of an invisible character (a tab).
+
+First use the makefile to create a dependency tree.  Then give
+the following command:
+
+   make
+
+What happens on the screen should correlate with your dependency
+tree.  If not, you will need help to straighten out your
+misconceptions.

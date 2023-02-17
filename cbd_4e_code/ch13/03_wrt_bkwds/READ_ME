@@ -1,0 +1,15 @@
+---
+OPEN A FILE AND WRITE IT BACKWARDS: Program on page 453:
+
+The program that opens a file and writes the characters
+in the file backwards is somewhat delicate.  In pgm1.c
+we have what is written on page 453 of the text.  This
+will work on some systems but not all.
+
+The problem is that fseek() on some systems will not
+allow a negative offset from the beginning of the file.
+(The ANSI C document does not specify whether this can
+be done or not.)
+
+---
+We have written a variation of pgm1.c in pgm2.c.

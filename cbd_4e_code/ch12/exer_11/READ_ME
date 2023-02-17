@@ -1,0 +1,38 @@
+---
+EXERCISE 11 on page 426:
+
+The program in this directory gets you started on this exercise.
+Begin by compiling and executing the program so you understand
+its effects.  To do this exercise correctly, you must make
+modifications to the program.
+
+---
+Overrunning the bound of arrays can cause unexpected problems.
+In the function create_array() we declared name as follows:
+
+   char   name[MAXSTRING];                 /* MAXSTRING = 100 */
+
+We feel confident that any name we pick up will fit in 100 character.
+Later, after we have picked up a name, we check on its length with
+an assertion:
+
+   assert(strlen(name) < MAXNAME);         /* MAXNAME = 20 */
+
+If the assertion is true then we put name where we want it:
+
+   strcpy(a[i].name, name);
+
+Note that a[i].name is a member of a structure of type data, which
+in the header file is declared as follows:
+
+   struct data {
+      char   name[MAXNAME];
+      int    age;
+      int    weight;
+   };
+
+Why did we use the size MAXNAME, which is only 20?  Well, if we
+wanted to store lots (say 10s of thousands) of such structures in
+the machine, space might become a scarce resource.  The use of
+MAXSTRING might be safer, but in a real database application, its
+use might be too costly with respect to memory requirements.

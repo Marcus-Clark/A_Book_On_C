@@ -1,0 +1,38 @@
+---
+TEST THE MAJORITY FUNCTION: Exercise 5 on page 596
+
+We have assumed that a short has 2 bytes (= 16 bits).
+
+---
+Compile and execute the program as it is written.  You
+will see that some assertions fail.  To complete this
+exercise, you have to write the correct code for the
+majority() function.
+
+---
+When we first wrote this program, we used the following
+declaration in the function definition for chk():
+
+   short   mask = 1 << 15;
+
+This causes problems on machines with 4-byte words,
+because each short gets promoted to an int.  This
+kind of promotion is called an "integral promotion,"
+and the compiler does them automatically; see page
+216 in the text.
+
+With mask declared as a short, the following code
+in chk() does not work as expected:
+
+   cnt =   (((a << i) & mask) != 0)
+	 + (((b << i) & mask) != 0)
+	 + (((c << i) & mask) != 0);
+
+Try it and you will see that there are problems.
+
+---
+If we use an unsigned short instead of a signed short
+for the mask, does the program work correctly?
+Try the following declaration:
+
+   unsigned short   mask = 1 << 15;

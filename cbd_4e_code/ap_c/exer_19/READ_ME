@@ -1,0 +1,15 @@
+---
+COMPARING A CHAR TO EOF: Exercise 19 on page 599
+
+Trying to compare a char with EOF does not always work as
+expected.  On any machine that implements a plain char as
+a signed char, pgm1.c will work as expected.  However, the
+program will not work as expected on any machine that
+implements a plain char as an unsigned char.
+
+Try pgm2.c to see what the effects would be on such a machine.
+
+---
+In C, any char or short gets promoted to an int.  This is
+called an integral promotion.  If you do not understand what
+is happening, use the bit_print() function.

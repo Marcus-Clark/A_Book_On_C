@@ -1,0 +1,163 @@
+---
+USING THE PROFILER:
+
+This program creates two identical arrays of integers a[] and b[] and
+sorts them.  We use qsort() in the standard library to sort a[] and, we
+use a transposition sort called slow_sort(), which we provide ourselves,
+to sort b[].
+
+---
+We are not interested in sorting arrays per se; we already know how to
+do that.  What we want to do here is to compare the running times of 
+the two different sorting routines.  We can do this by giving the
+following commands:
+
+ 
+   cc -p -o compare_sorts *.c   // use -p for the profiler
+
+   compare_sorts                // input 10 when prompted to see an array
+
+   compare_sorts                // input 1000 when prompted
+
+   prof compare_sorts           // this produces interesting output
+
+---
+Here is the output of the profiler on a Sun Sparcstation 2 running
+SunOS 4.1.3:
+
+    %time  cumsecs  #call  ms/call  name
+     94.5     0.86      1   860.00  _slow_sort
+      2.2     0.88      1    20.00  _qsort
+      1.1     0.89   1000     0.01  .rem
+      1.1     0.90      1    10.00  _chk_arrays
+      1.1     0.91                  mcount
+      0.0     0.91    382     0.00  .div
+      0.0     0.91   1383     0.00  .mul
+      0.0     0.91      2     0.00  .udiv
+      0.0     0.91      4     0.00  .umul
+      0.0     0.91      2     0.00  __doprnt
+      0.0     0.91      1     0.00  __doscan
+      0.0     0.91      1     0.00  __filbuf
+      0.0     0.91      2     0.00  __findbuf
+      0.0     0.91      1     0.00  __flsbuf
+      0.0     0.91      1     0.00  __wrtchk
+      0.0     0.91      3     0.00  __xflsbuf
+      0.0     0.91      2     0.00  _bzero
+      0.0     0.91      2     0.00  _calloc
+      0.0     0.91  11291     0.00  _compare
+      0.0     0.91      1     0.00  _exit
+      0.0     0.91      1     0.00  _fflush
+      0.0     0.91      2     0.00  _free
+      0.0     0.91      2     0.00  _gcalloc
+      0.0     0.91      2     0.00  _ioctl
+      0.0     0.91      2     0.00  _isatty
+      0.0     0.91      2     0.00  _localeconv
+      0.0     0.91      1     0.00  _main
+      0.0     0.91      6     0.00  _malloc
+      0.0     0.91      2     0.00  _memchr
+      0.0     0.91      2     0.00  _on_exit
+      0.0     0.91      2     0.00  _printf
+      0.0     0.91      1     0.00  _profil
+      0.0     0.91   1000     0.00  _rand
+      0.0     0.91      1     0.00  _read
+      0.0     0.91      2     0.00  _sbrk
+      0.0     0.91      1     0.00  _scanf
+      0.0     0.91      1     0.00  _strcpy
+      0.0     0.91      1     0.00  _strlen
+      0.0     0.91      1     0.00  _ungetc
+      0.0     0.91      3     0.00  _write
+
+The top three lines are of interest to us:
+
+    %time  cumsecs  #call  ms/call  name
+     94.5     0.86      1   860.00  _slow_sort
+      2.2     0.88      1    20.00  _qsort
+
+In column 1, under %time, we see the percent of the total execution
+time utilized by the various function calls.  In particular, we observe
+that slow_sort() utilized 94.5% of the time while qsort() used only 2.2%
+of the time.
+
+---
+We executed the compare_sorts program again, and this time
+we entered 10000 when prompted.  When we gave the command
+
+   prof compare_sorts
+
+we obtained
+
+ %time  cumsecs  #call  ms/call  name
+  99.1    68.40      1 68400.00  _slow_sort
+   0.3    68.63 167260     0.00  _compare
+   0.2    68.77      1   140.00  _qsort
+   .....
+
+Now we see that 99.1% of the execution time was utilized by the call
+to slow_sort() and that 0.3% and 0.2% of the time was utilized by
+compare() and qsort(), respectively.
+
+---
+We compiled the program on a DEC Alpa workstation built in late 1994
+or early 1995.  On this machine, the form of the output was different,
+but the message was the same:
+
+   Profile listing generated Mon Dec 18 18:40:35 1995 with:
+      prof compare_sorts 
+
+   ----------------------------------------------------------------------------
+   *  -p[rocedures] using pc-sampling;                                        *
+   *  sorted in descending order by total time spent in each procedure;       *
+   *  unexecuted procedures excluded                                          *
+   ----------------------------------------------------------------------------
+
+   Each sample covers 4.00 byte(s) for 0.014% of 7.0469 seconds
+
+   %time     seconds  cum %   cum sec  procedure (file)
+
+    99.1      6.9814   99.1      6.98 slow_sort (slow_sort.c)
+     0.4      0.0264   99.4      7.01 qsort
+     0.2      0.0117   99.6      7.02 compare (compare.c)
+     0.1      0.0098   99.8      7.03 qs1 
+     0.1      0.0088   99.9      7.04 qsexc 
+     0.1      0.0039   99.9      7.04 main (main.c)
+     0.0      0.0029  100.0      7.04 chk_arrays (chk_arrays.c)
+     0.0      0.0010  100.0      7.05 rand 
+     0.0      0.0010  100.0      7.05 _wrtchk 
+
+---
+Our compare_sorts program is not a very good way to measure one machines
+performance against another, but nonetheless we observe that the DEC Alpha
+machine is quite a bit faster than the Sun Sparcstation 2.  Of course this
+is to be expected, because the DEC Alpha machine is newer.
+
+---
+CONCLUSION:
+
+When we write a program that requires sorting of anything but a very
+small array, we should not use a bubble sort or transposition sort.
+We will accomplish our task a lot quicker if we use qsort() instead.
+
+Actually, there is more to this story.  By writing our own quicksort()
+routine, we can achieve much better results than qsort().  This story
+is told in
+
+   A Book on C, 3rd edition,
+   by Al Kelley and Ira Pohl,
+   Benjamin/Cummings Publishing Co., 1995
+
+---
+A NOTE ABOUT THE GRACEFUL LIBRARY
+
+We cannot demonstrate the use of the graceful library here.
+Because they are built out of .o files (or .obj files),
+libraries are highly compiler- and system-dependent.
+
+We have alluded to the use of a graceful library by putting
+the line
+
+   #include "g_lib.h"
+
+in cmp_sorts.h.  However, to make the code in this directory
+self contained, we do not actually use a graceful library.
+Rather, the file grace.c contains the one graceful
+function that we need.

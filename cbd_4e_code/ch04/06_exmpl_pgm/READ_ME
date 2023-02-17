@@ -1,0 +1,19 @@
+---
+AN EXAMPLE PROGRAM:
+
+This program does not do very much,
+but it illustrates how a program
+can be written in more than
+one file.
+
+To compile this program, you can
+give the command
+
+   cc *.c
+
+If you have the GNU C/C++ compiler,
+then you can give the command
+
+   make
+
+to compile this program.

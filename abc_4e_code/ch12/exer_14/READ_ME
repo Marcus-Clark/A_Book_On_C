@@ -1,0 +1,15 @@
+---
+The code in this directory captures some of the ideas
+presented in exercise 14 on page 589 of ABC 4/e.
+
+A tensor can be thought of as a 3-dimensional array.
+
+The space for the elements of the tensor is
+allocated all at once.  Pointer are offset
+so that the indexing starts at 1, not 0.
+
+---
+CAUTION:
+   Line 46 in the file space.c is wrong.
+   You have to figure out the correct algorithm
+   for pointing into the array of elements.

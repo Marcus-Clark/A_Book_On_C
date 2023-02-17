@@ -1,0 +1,25 @@
+---
+MACROS WITH ARGUMENTS
+
+Writing programs with macros that have arguments can be both
+frustrating and tedious.  The problem is that the preprocessor
+rules are different from those of the compiler.
+
+Modern programming methodology has moved away from using
+macros with arguments.
+
+The program we have written here illustrates the use of
+macros with arguments.
+
+---
+Here is the output from the program:
+
+   s i v l w b d u o z u j t y z u h l c w v n c k j u w w e v m h 
+   b c c d e h h i j j k l l m n o s t u u u u v v v w w w w y z z 
+   ---
+   2.9   1.0   2.8   3.6   3.2   4.5   9.1   5.9   6.0   3.0   4.2   
+   6.0   1.0   3.0   9.1   4.2   3.2   4.5   3.6   2.8   5.9   2.9   
+
+The letters in the first row were sorted lexicographically and
+then written in the second row.  The numbers in the third row
+were sorted on the last digit and then written in the last row.

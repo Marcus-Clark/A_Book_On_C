@@ -1,0 +1,25 @@
+---
+Palindromes from the file /usr/dict/words:
+
+   AAA        ABA        AMA        Ababa      Ada        Anna
+   CDC        DOD        Hannah     Nan        Otto       PDP
+   Sus        TNT        a          ala        ana        b
+   bib        bob        bub        c          civic      d
+   dad        deed       did        dud        e          eke
+   ere        eve        ewe        eye        f          g
+   gag        gig        gog        h          huh        i
+   ii         iii        j          k          l          level
+   m          madam      minim      mum        n          non
+   noon       nun        o          p          pap        peep
+   pep        pip        poop       pop        pup        q
+   r          radar      refer      rever      rotor      s
+   s's        sis        t          tat        teet       tenet
+   tit        toot       tot        u          v          w
+   wow        x          y          z
+
+---
+Number of palindromes: 88
+   Longest palindrome: Hannah
+      Number of words: 25143
+         Longest word: electroencephalography
+

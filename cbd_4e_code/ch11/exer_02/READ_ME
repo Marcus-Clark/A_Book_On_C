@@ -1,0 +1,40 @@
+---
+PALINDROME PROGRAM: Exercise 2 on page 383:
+
+We have written an iterative version of a palindrome
+function in the program in this directory.  We leave
+it to the reader to write a recursive version.
+
+Our program is in C++; the reader may wish to rewrite
+it in C.  In our program, we hard-wired the input
+file to be
+
+   /usr/dict/words
+
+which is a file of words found on UNIX systems that is
+convenient to use.  To test your palindrome function,
+you can use any text file.
+
+---
+Here is the output from our program:
+
+Palindromes in the file /usr/dict/words:
+
+         a       AAA       ABA       ala       AMA       ana         b
+       bib       bob       bub         c       CDC     civic         d
+       dad      deed       did       DOD       dud         e       eke
+       ere       eve       ewe       eye         f         g       gag
+       gig       gog         h       huh         i        ii       iii
+         j         k         l     level         m     madam     minim
+       mum         n       non      noon       nun         o         p
+       pap       PDP      peep       pep       pip      poop       pop
+       pup         q         r     radar     refer     rever     rotor
+         s       sis       s's         t       tat      teet     tenet
+       tit       TNT      toot       tot         u         v         w
+       wow         x         y         z
+
+      Longest palindrome: civic
+   Number of palindromes: 81
+            Longest word: electroencephalography
+         Number of words: 25143
+

@@ -1,0 +1,26 @@
+---
+HWAT this prgoarm does:
+
+For each apir of contgiousu alpahbeitc characetrs
+a cehck is amde to ese fi tehy are out fo odrer with
+erpscet ot tehir ACSII valeus.  If so, teh caharcters
+egt inetcrahgnde.
+
+Tpycial uaseg: gpm < infiel
+
+---
+DISSCUSSION
+
+This prgoarm is not very sueflu, but it illsurtates teh
+idea fo call-by-reference.  Insdie a hwile loop we apss
+tow caharcter agrmuenst into hte fucnitno gerater().
+Beacsue hte two arguemnts are apssde call-by-reference,
+hte avlues of hte arguemnts in teh calilgn envirnoemnt
+can be chanegd.
+
+The prgoarm is not rbosut.  If a file contains an dod
+nubmer of characetrs, hte alst caharcter, tyipaclly a
+enlwine characetr, will egt lost.
+
+Interchange count: 94
+

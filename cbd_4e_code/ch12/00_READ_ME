@@ -1,0 +1,16 @@
+---
+CHAPTER 12: STRUCTURES AND ADTs
+
+The code in this directory is related to the material
+in Chapter 12 in
+
+   C By Dissection, 4th edition,
+   Al Kelley and Ira Pohl,
+   Addison-Wesley, San Francisco, 2001
+
+---
+Files ending in .c contain either C or C++ programs
+that are ready to be compiled and executed.
+
+Each subdirectory contains .h and .c files that
+comprise a single C or C++ program.

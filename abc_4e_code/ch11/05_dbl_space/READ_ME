@@ -1,0 +1,13 @@
+This is the program on page  510 of ABC 4/e.
+
+WARNING:
+   The program is dangerous because it overwrites
+   whatever filename you type on the command line.
+   Suppose, for example, that you give the
+   following commands:
+
+      cc  -o replicate  pgm.c
+      cp  READ_ME  my_file
+      replicate  my_file
+   
+   The contents of my_file has been changed.

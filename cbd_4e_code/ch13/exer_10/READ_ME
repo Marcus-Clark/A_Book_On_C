@@ -1,0 +1,38 @@
+---
+EXERCISE 10 on page 465:
+
+Accidently overwriting a file can be very annoying.
+For that reason, there are very few utilities provided
+by the operating system of the form
+
+   pgm  infile  outfile
+
+where outfile gets overwritten if it already exists.  In
+contrast to this, the operating system does provide lots
+of utilities that can be used as follows:
+
+   pgm  infile  >  outfile
+
+A command such as this will overwrite outfile if it already
+exists, but now it is the user doing it on purpose.  If you
+lose a file doing something like this, you cannot blame the
+operating system.
+
+---
+The purpose of this exercise is to demonstate one way to
+write a careful file opening routine, so that a command
+line of the form
+
+   pgm  infile  outfile
+
+is not so likely to cause the user grief.
+
+There is very little left to do in this exercise except
+to finish the code for the prn_rand() function.  And
+actually, you can get the sense of what this exercise
+is trying to teach you by compiling and executing
+the program as it is currently written.
+
+We do not really care about the list of randomly
+distributed integers.  We just needed an excuse
+for using the cfopen() function.

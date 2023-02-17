@@ -1,0 +1,17 @@
+---
+SEE THE EFFECTS OF A PROMOTION: Exercise 18 on page 598
+
+There are two questions being addressed in this exercise:
+
+   1  How is a plain char implemented on your machine?
+   2  Can you see the effects of the promotions?
+
+---
+Compile and execute the two programs
+
+   pgm1.c     pgm2.c
+
+The output from these two programs should help you
+answer the questions.  Are promotions taking place
+in just one of the programs or in both?
+Explain.

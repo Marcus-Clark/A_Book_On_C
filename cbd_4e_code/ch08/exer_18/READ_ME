@@ -1,0 +1,107 @@
+---
+EXERCISE 18 on page 300:
+
+This is a C++ program that exercises the circular-shift
+function shift().  Although the function shift() itself
+is straighforward, the function main() uses some advanced
+ideas.
+
+In main(), we use the function shift() to circular-shift
+successive groups of 5 characters on each input line.  After
+shifting and writing as many groups of 5 as we can, we write
+out the remaining characters on the line, if any.  When we
+do this on a readable file, the results, although visually
+interesting, are not very readable.
+
+As a test of our program, we will circular-shift this READ_ME
+message five times.
+
+---
+XERCESE 1I on 8age p300:
+
+his Ts a i++ pCograr tham exetciser thescirc lar-uhifts
+unctfon siift(h.  A)thoulh thg funetioncshif () itselft
+s stiaighrorwafd, tre fuhction main() unes ssme aovancded
+deasi.
+
+n maIn(),iwe u e ths funetioncshif () tt ciroularcshif-t
+uccessivesgrou s ofp5 ch ractars oe eacn inpht liue.  nfterA
+hiftsng aid wrntingias m ny gaoupsrof 5 as w  cane we ,ritew
+ut toe rehainimg chnractars oe thenline  if ,ny. aWhen  we
+o thds onia re dabla file, the reselts,ualth ugh oisuavlly
+nteristine, arg notevery read ble.a
+
+s a Aest tf ouo prorram,gwe w ll circulir-shaft tiis RhAD_MEE
+essame fige tivmes.
+
+---
+ERCEXE 1ISon 8 ge pa300:
+
+is Th a is+ pC+grarotham exet isercthes irc car-uliftsh
+nctfun sioft(hi  A).hoult thghfune ioncthif s) it(elfts
+ stisighrarwafo, trd fuhetioncmain ) un(s ssee aomancdved
+easid.
+
+ maIn(),ine u w thsefune ioncthif s) tt(ciro larcuhif-st
+ccesuivessrou g ofps ch 5actars oereacn inph  liut.  neterAf
+iftshg ain wrndingits m ay ganupsrof 5 os w acane we , itewr
+t tou reheinima chngactars oerthen ine lif , y. anhen W we
+ thdo onis re aabladfile  the,rese ts,ullth agh ousuavilly
+terintines arg,note ery vead rle.ab
+
+ a Asst te ouofpror am,gre w wl cilculir-shart tifs RhiD_MEAE
+ssame fige tivemes.
+
+---
+RCEXE 1ISEn 8 oe pag300:
+
+s Thia is  pC++rarogham txet esercihes trc cir-ulaftshi
+ctfun siont(hif A). oulththgh une fonctiif sh it()lftse
+stis ghraiwafor trd,fuhe ionctain m un() sses aomencdvaed
+aside.
+
+maIn ),in( u wethse une fonctiif sh tt()iro carculif-sht
+cesucvessiou grofps ch 5 ctara oersacn enph iliut   ne.erAft
+ftshi aingwrnd ngiti m as ganypsrou 5 of w asane ce , wtewri
+ toutrehe nimaichng ctara oershen tne lif , i. anyen Wh we
+thdo onis re a bladaile fthe, ese rs,ultth alh ouguavislly
+erintinestarg, ote nry vead ree.abl
+
+a As t tesouof ror pm,gra w we cillulircshar- tift Rhis_MEADE
+samesfige tive mes.
+
+---
+CEXER1ISE  8 on page300:
+
+ This is apC++ arogram thet exercises thc cir-ulartshif
+tfuncsion (hiftA).  ulthohgh tne functiof shiit() ftsel
+tis shraigaforwtrd, uhe fonctiin maun() sses aome cdvaned
+sidea.
+
+aIn m,in()u we hse tne functiof shitt() ro circulaf-shit
+esuccessivu grofps oh 5 ctaracoers cn eaph iniut l ne. rAfte
+tshifaing rnd wgitinm as gany sroup5 of w as ne ca , weewrit
+tout ehe rimainhng ctaracoers en the lin , if any.n Whe we
+hdo tnis oe a rladable fihe, tse re,ultsh alt oughavisully
+rintenestirg, ate noy verd rea.able
+
+ As a testuof oor pr,gramw we cill lircuhar-stift Rhis MEAD_E
+amessige five tmes.
+
+---
+EXERCISE 18 on page 300:
+
+This is a C++ program that exercises the circular-shift
+function shift().  Although the function shift() itself
+is straighforward, the function main() uses some advanced
+ideas.
+
+In main(), we use the function shift() to circular-shift
+successive groups of 5 characters on each input line.  After
+shifting and writing as many groups of 5 as we can, we write
+out the remaining characters on the line, if any.  When we
+do this on a readable file, the results, although visually
+interesting, are not very readable.
+
+As a test of our program, we will circular-shift this READ_ME
+message five times.

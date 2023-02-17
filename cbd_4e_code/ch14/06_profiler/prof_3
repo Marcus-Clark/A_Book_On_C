@@ -1,0 +1,22 @@
+Profile listing generated Mon Dec 18 18:40:35 1995 with:
+   prof compare_sorts 
+
+----------------------------------------------------------------------------
+*  -p[rocedures] using pc-sampling;                                        *
+*  sorted in descending order by total time spent in each procedure;       *
+*  unexecuted procedures excluded                                          *
+----------------------------------------------------------------------------
+
+Each sample covers 4.00 byte(s) for 0.014% of 7.0469 seconds
+
+%time     seconds  cum %   cum sec  procedure (file)
+
+ 99.1      6.9814   99.1      6.98 slow_sort (slow_sort.c)
+  0.4      0.0264   99.4      7.01 qstexc (../../../../../../src/usr/ccs/lib/libc/qsort.c)
+  0.2      0.0117   99.6      7.02 compare (compare.c)
+  0.1      0.0098   99.8      7.03 qs1 (../../../../../../src/usr/ccs/lib/libc/qsort.c)
+  0.1      0.0088   99.9      7.04 qsexc (../../../../../../src/usr/ccs/lib/libc/qsort.c)
+  0.1      0.0039   99.9      7.04 main (main.c)
+  0.0      0.0029  100.0      7.04 chk_arrays (chk_arrays.c)
+  0.0      0.0010  100.0      7.05 rand (../../../../../../src/usr/ccs/lib/libc/rand.c)
+  0.0      0.0010  100.0      7.05 _wrtchk (../../../../../../src/usr/ccs/lib/libc/flsbuf.c)

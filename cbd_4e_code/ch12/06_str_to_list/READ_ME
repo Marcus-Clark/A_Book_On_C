@@ -1,0 +1,23 @@
+---
+USING LINKED LISTS
+
+Here are the functions of interest in this program:
+   
+            count(): count the elements in a linked list recursively
+      find_vowels(): look for vowels and report results
+           lookup(): lookup an element in the list recursively
+   string_to_list(): create a linked list from a string recursively
+
+---
+It is easy to write iterative versions of the recursive functions
+in this list, but because recursion works well in these kinds
+of tasks, we are happy with the recursive versions.
+
+---
+The function fgets() that we used in main() picks up a line
+typed at the keyboard, including a newline character.  All
+of the characters in the line, including the newline
+character, get counted.
+
+---
+Read about fgets() in Appendix A.

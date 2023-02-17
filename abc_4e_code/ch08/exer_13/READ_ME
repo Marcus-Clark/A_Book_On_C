@@ -1,0 +1,10 @@
+---
+In pgm1.c you will see the stringization operator #,
+whereas that operator is missing in pgm2.c.  By
+executing the following commands, you will see
+the effects of the stringization operator:
+
+   cc -o pgm1 pgm1.c
+   cc -o pgm2 pgm2.c
+   pgm1
+   pgm2

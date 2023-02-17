@@ -1,0 +1,7 @@
+
+Input three characters,
+an int, a float, and a double:  ABC  3  55  77.7
+
+Here is the data that you typed in:
+  A  B  C    3     5.500000e+01     7.770000e+01
+
